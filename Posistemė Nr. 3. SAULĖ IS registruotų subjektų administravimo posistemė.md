@@ -8,12 +8,12 @@ SAULĖ IS registruotų subjektų administravimo posistemė skirta:
 * Pirkimų vykdytojų, Tiekėjų ir Išorinių kontrolierių veiksmų sistemoje autorizavimui (teisių priskyrimui);
 * Organizacijos ir naudotojų deaktyvavimui.
 
-[3.3.3.1 Organizacijų registravimo procesas](#user-content-3331organizacijų-registravimo-procesas)
-[3.3.3.2 Naudotojo autentifikavimo procesas](#user-content-3332naudotojo-autentifikavimo-procesas)
-[3.3.3.3 Organizacijos naudotojų valdymas](#user-content-3333organizacijos-naudotojų-valdymas)
-[3.3.3.4 Sistemos ar Organizacijos administratoriaus funkcijų perdavimo valdymo procesas](#user-content-3334sistemos-ar-organizacijos-administratoriaus-funkcijų-perdavimo-valdymo-procesas)
-[3.3.3.5 Pirkėjų, Tiekėjų ir Išorinių kontrolierių veiksmų sistemoje autorizavimo procesas (rolių bei teisių administravimas)](#user-content-3335pirkėjų-tiekėjų-ir-išorinių-kontrolierių-veiksmų-sistemoje-autorizavimo-procesas-rolių-bei-teisių-administravimas-)
-[3.3.3.6 Organizacijos deaktyvavimas](#user-content-3336organizacijos-deaktyvavimas)
+* [3.3.3.1 Organizacijų registravimo procesas](#user-content-3331organizacijų-registravimo-procesas)
+* [3.3.3.2 Naudotojo autentifikavimo procesas](#user-content-3332naudotojo-autentifikavimo-procesas)
+* [3.3.3.3 Organizacijos naudotojų valdymas](#user-content-3333organizacijos-naudotojų-valdymas)
+* [3.3.3.4 Sistemos ar Organizacijos administratoriaus funkcijų perdavimo valdymo procesas](#user-content-3334sistemos-ar-organizacijos-administratoriaus-funkcijų-perdavimo-valdymo-procesas)
+* [3.3.3.5 Pirkėjų, Tiekėjų ir Išorinių kontrolierių veiksmų sistemoje autorizavimo procesas (rolių bei teisių administravimas)](#user-content-3335pirkėjų-tiekėjų-ir-išorinių-kontrolierių-veiksmų-sistemoje-autorizavimo-procesas-rolių-bei-teisių-administravimas-)
+* [3.3.3.6 Organizacijos deaktyvavimas](#user-content-3336organizacijos-deaktyvavimas)
 
 ## 3.3.3.1	Organizacijų registravimo procesas
 
