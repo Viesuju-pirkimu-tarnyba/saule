@@ -1,0 +1,57 @@
+### 7.8.5	Reikalavimai Analitikos (BĮ) posistemiui
+2312. SAULĖ IS turi būti galimybė formuoti iš anksto apibrėžtas ataskaitas iš visų sistemoje kaupiamų duomenų.
+2313. Neapsiribojant turi būti galimybės formuoti šių tipų ataskaitas:
+2313.1. Tipines (angl. relational model) – tai iš anksto parengtos formos ataskaitos, kuriose yra apibrėžtas dimensijų, atributų ir metrikų atvaizdavimas, t. y. kuriose vietose (stulpeliuose, eilutėse, ląstelėse) jie yra atvaizduojami ir apibrėžti galimi filtrai. Šiose ataskaitose iš principo naudotojui yra galimybė tik vykdyti ataskaitos filtravimą pagal nustatytus filtrus. Dažniausiai šios ataskaitos rengiamos lentelių forma. 
+2313.2. Dimensines (angl. ad hoc reports) – kuriose naudotojas gali vykdyti ataskaitų modeliavimą (angl. pivoting), t.y. pasirinkti dimensijas, metrikas ir jų atvaizdavimo vietą (stulpeliuose, eilutėse, ląstelėse, filtruose), ataskaitos formą (diagrama, lentelė) ir vykdyti filtravimo, detalizavimo ir bendrinimo veiksmus. 
+2313.3. Interaktyvias (angl. report to report) – kuriose turi būti iš anksto suformuotas duomenų, metrikų ir dimensijų rinkinys, jų pateikimo galimos formos bei naudotojui suteikta galimybė pereiti iš vienos ataskaitos formos į kitą, vykdyti filtrus, vykdyti detalizavimo, bendrinimo veiksmus. 
+2313.4. Prognozavimo (angl. forecasting) – kurios leistų sudaryti prognozavimo pjūvius pagal įvairias savarankiškai kuriamas ar tipines metrikas ir prognozes pateikti įvairiomis ataskaitų ir diagramų rūšimis.
+2314. Tipinėse ataskaitose turi būti realizuotos šios galimybės:
+2314.1. Į ataskaitą įtraukti visą esybę su savo atributais arba pasirinkti tik dalį jos atributų, tokiu būdu suteikiant galimybę analizuoti apibendrintą arba išskleistą vertinimo kriterijų informaciją (metrikas). Automatinėmis priemonėmis turi būti užtikrinama, kad ta pati esybė ar atributas nebus įtrauktas į ataskaitą daugiau nei vieną kartą;
+2314.2. Formuoti nurodytų esybių ir pasirinktų atributų sąrašus, su galimybe eliminuoti pasikartojančius sąrašų duomenis;
+2314.3. Generuoti grafines diagramas iš pasirinktų esybių ar jų atributų;
+2314.4. Atlikti matematinius veiksmus su stulpelių reikšmėmis, t. y., skaičiuoti (angl. count), sudėti, atimti, dauginti, dalinti, rodyti procentinį santykį:
+2314.5. Atliktų veiksmų rezultatai turi būti atvaizduojami naujai pridėtame stulpelyje;
+2314.6. Naujai pridėto stulpelio pavadinimą turi būti leidžiama redaguoti;
+2314.7. Duomenis turi būti galima filtruoti ir rūšiuoti pagal naujai pridėtą stulpelį;
+2314.8. Turi būti galimybė į ataskaitą įkelti duomenis iš išorinės rinkmenos ir juos panaudoti formuojant ataskaitą.
+2315. Dimensinėse ataskaitose turi būti šios galimybės:
+2315.1. Išskleisti objektų detalumą iki žemiausio lygio pagal pasirinktos dimensijos hierarchiją, kurios taip pat gali būti sudarytos iš kitų dimensijų;
+2315.2. Sukeisti eilučių ir stulpelių reikšmes vietomis;
+2315.3. Generuoti grafines diagramas iš pasirinktų esybių ar atributų nustatytu laiko periodu;
+2315.4. Turi būti galimybė sužinoti, kokias metrikas ir rodiklius galima apskaičiuoti pagal pasirinktą dimensiją.
+2315.5. Interaktyviose ataskaitose turi būti realizuotos šios galimybės:
+2315.6. Generuoti grafines diagramas iš pasirinktų esybių ar atributų;
+2315.7. Turi būti leidžiama keisti stulpelių išdėstymo seką visose ataskaitose.
+2316. Turi būti galimybė atfiltruoti visų ataskaitų duomenų imtį tiek pagal visus ataskaitos stulpelius, tiek pagal papildomus ataskaitų filtrus, kuriuos Diegėjas turi apibrėžti kiekvienai ataskaitai detalios analizės metu.
+2317. Kiekvienas naudotojas turi galėti išsaugoti ataskaitas, suformuotas pagal asmeninius nustatymus:
+2317.1. Turi būti galimybė pasirinkti ataskaitos išdėstymo struktūrą (angl. layout) ir stilių, būtent:
+2317.2. Nurodant duomenų atvaizdavimo būdą: sąrašas, lentelė, dimensinė ataskaita, diagrama, žemėlapis ir pan.;
+2317.3. Pasirenkant formatavimo parametrus, tokius kaip spalvos, numeracija, paveiksliukai;
+2317.4. Nurodant atskirų objektų išdėstymą skirtinguose lapuose.
+2317.5. Turi būti galimybė pasirinkti konkrečias filtravimo reikšmes;
+2317.6. Jei keliose ataskaitose yra tas pats filtravimo laukas (pvz., data), išsaugota filtro reikšmė vienoje ataskaitoje neturi daryti įtakos kitos ataskaitos duomenų atvaizdavimui.
+2318. Turi būti galimybė rūšiuoti visų ataskaitų duomenis pagal stulpelių reikšmes didėjimo ir mažėjimo tvarka (reikalavimas taikomas skaitinės ir tekstinės / klasifikatorių tipų laukams).
+2319. Turi būti galimybė eksportuoti visas ataskaitas į HTML, CSV, XLSX, DOCX, PDF ar lygiaverčiais formatais.
+2320. VPT naudotojai turi galėti viešinti sudarytas ataskaitas į portalo „Saulė“ viešinimo informacijos posistemę. Viešinamos informacijos naudotojai turi galėti tvarkyti ataskaitą pagal ataskaitai nustatytus parametrus (ieškoti, filtruoti, pasirinkti dimensijas, metrikas ir kt.). Viešinamų ataskaitų duomenys turi būti atnaujinami nustatytu periodiškumu.
+2320.1. Turi būti eksportuoti tik atfiltruoti (ar paieškos rezultatuose pateikti) duomenys;
+2321. Turi būti galima suformuoti ir bet kuriuo metu keisti šias grafinių diagramų rūšis: 
+2321.1. Sritinis,
+2321.2. Juostinis (angl. Bar chart),
+2321.3. Stulpelinis (angl. Column chart),
+2321.4. Linijinis (angl. Line chart),
+2321.5. Skritulinis (angl. Pie chart),
+2321.6. Taškinis (angl. Point chart),
+2321.7. Burbulinis (angl. Bubble chart);
+2321.8. Ganto (angl. Gantt chart).
+2322. Turi būti galima kurti duomenų kubus.
+2322.1. Duomenų kubams turi būti galima priskirti naudotojus ir naudotojų grupes, kurios gali duomenų kubą naudoti ataskaitų sudarymui ir analizei vykdyti.
+2322.2. Diegėjas turi sukurti duomenų kubus:
+2322.3. VPT naudotojų grupei, VPT ataskaitų sudarymui ir analizei atlikti.
+2322.4. Institucijų (Įgyvendinančių institucijų, Priežiūros institucijų) naudotojų grupei, Institucijų ataskaitoms sudaryti ir analizei atlikti. Gali būti naudojami tik tie duomenys, kuriems Institucija turi teisę tvarkyti bei vieši SAULĖ IS duomenys.
+2322.5. Organizacijų (Tiekėjų, Pirkimų vykdytojų) naudotojų grupei, organizacijų ataskaitoms sudaryti ir analizei atlikti. Gali būti naudojami tik tie duomenys, kuriems Organizacija turi teisę tvarkyti bei vieši SAULĖ IS duomenys.
+2322.6. Visuomenės naudotojų grupei ataskaitoms sudaryti ir analizei atlikti. Gali būti naudojami tik vieši (atviri) SAULĖ IS duomenys.
+2323. Naudotojų grupėms sudaryti duomenų kubai turi būti prieinami atitinkamai naudotojų grupei portale „Saulė“ ir vidiniame portale. Naudotojai turi galėti tvarkyti jiems priskirtus duomenų kubus ir sudarytas ataskaitas pagal šiame skyriuje apibrėžtą funkcionalumą.
+2324. Kiekvienos naudotojų grupės duomenų kubo esybės ir metrikos turi būti apibrėžtos detalios analizės ir projektavimo etape. Duomenų kubų apimtis turi būti pakankama detalios analizės ir projektavimo etape apibrėžtoms ataskaitoms sudaryti bei platesnei analizei atlikti ir statistiniam skaičiavimams vykdyti.
+2325. VPT sistemos administratorius turi galėti redaguoti sudarytus duomenų kubus, nustatyti duomenų kubų atnaujinimo periodiškumą, plėsti/ mažinti duomenų kubą, nustatyti kitus duomenų kubų tvarkymo ir naudojimo parametrus.
+2326. Diegėjas visoms naudotojų grupėms turi bendrai realizuoti ne mažiau kaip 50 įvairaus tipo (kartu ir prognozavimo) ataskaitų, kurios turi būti apibrėžtos ir detalizuotos analizės ir projektavimo metu su Perkančiąja organizacija. Priede Nr. 2 pateikiami ataskaitų pavyzdžiai.
+2327. Analitikos (BI) posistemė turi realizuoti tinklines sąsajas (WS, RESTful ar lygiavertes) posistemėje sukurtų duomenų teikimui į kitas posistemes, išorines sistemas. Per sąsajas teikiamų duomenų apimtys ir formatai turi būti suderinti detalios analizės ir projektavimo etape. Sąsajomis teikiami duomenys turi būti prieinami visuomenei (atviri duomenys). Diegėjas turi parengti analitikos (BI) posistemės duomenų teikimo sąsajų specifikacijas, naudojimo instrukcijas.
