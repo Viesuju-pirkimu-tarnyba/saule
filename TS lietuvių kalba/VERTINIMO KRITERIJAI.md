@@ -1,0 +1,14 @@
+## VERTINIMO KRITERIJAI 
+
+
+Vertinimo    kriterijai | Maksimalus suteikiamas balų skaičius | Kriterijaus funkcinio parametro lyginamasis svoris | Lyginamasis svoris ekonominio naudingumo įvertinime
+-- | -- | -- | --
+Kaina (C)*   *į   pasiūlymo kainą turi būti įskaičiuoti visi 8 metų sutarties kaštai (sistemos   sukūrimas, sistemos palaikymui reikalingų licencijų kaina ir kitas lydinčias   paslaugas) |   |   | X= 80
+Tiekėjo   siūlomų specialistų patirtis (T) |   |   | Y= 20
+1. | Informacinių technologijų architektas    Jeigu šis specialistas   per pastaruosius 3 (tris) metus yra dalyvavęs    kaip IT architektas vykdant bent 1   (vieną) informacinių technologijų (IT) paslaugų teikimo sutartį, kurios   vykdymo metu buvo kuriama ar modernizuojama informacinė sistema arba   registras ir įgyvendinti (modernizuoti) architektūriniai sprendimai, pagrįsti   mikroservisų architektūros (angl. microservice architecture) principais, jam skiriami   4 balai. |   |   |  
+2. | Sistemų integravimo   specialistas   Jeigu šis specialistas   per pastaruosius 3 (tris) metus yra dalyvavęs    kaip Sistemų integravimo specialistas vykdant bent 1 (vieną) informacinių technologijų (IT) paslaugų teikimo   sutartį, kurios vykdymo metu buvo kuriama ar modernizuojama informacinė   sistema arba registras, pagrįsti mikroservisų architektūros (angl.   microservice architecture) principais, ir įgyvendinti (modernizuoti)   architektūriniai sprendimai, ir būtų vykdęs su architektūriniais   sprendimais  susijusias veiklas, jam skiriami   4 balai. |   |   |  
+3. | Aplikacijų programuotojas   Jeigu šis specialistas   per pastaruosius 3 (tris) metus yra dalyvavęs    kaip Aplikacijų programuotojas vykdant bent 1 (vieną) informacinių technologijų (IT) paslaugų teikimo   sutartį, kurios vykdymo metu buvo kuriama ar modernizuojama informacinė   sistema arba registras, pagrįsti mikroservisų architektūros (angl.   microservice architecture) principais, jam skiriami 4 balai. |   |   |  
+4. | Testavimo specialistas   Jeigu šis specialistas   per pastaruosius 3 (tris) metus yra dalyvavęs    kaip Testavimo specialistas vykdant bent   1 (vieną) informacinių technologijų (IT) paslaugų teikimo sutartį, kurios   vykdymo metu buvo kuriama ar modernizuojama informacinė sistema arba   registras, pagrįsti mikroservisų architektūros (angl. microservice   architecture) principais, jam skiriami 4 balai. |   |   |  
+5. | IT saugos specialistas   Jeigu šis specialistas   per pastaruosius 3 (tris) metus yra dalyvavęs    kaip IT saugos specialistas vykdant bent   1 (vieną) informacinių technologijų (IT) paslaugų teikimo sutartį, kurios   vykdymo metu buvo kuriama ar modernizuojama informacinė sistema arba   registras, pagrįsti mikroservisų architektūros (angl. microservice   architecture) principais, jam skiriami 4 balai. |   |   |  
+
+*Kainos apskaičiavimo formulė: **C =(1 – (X/Pirkimo objektui nustatyta maksimali kaina)) * Kainos lyginamasis svoris**
