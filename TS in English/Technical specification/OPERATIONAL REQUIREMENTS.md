@@ -148,6 +148,8 @@ No | CPP IS users | Provided information/data
 5. | Supervisory Agencies | All data provided in Table 5.
 6. | Suppliers | Data for CPP IS publication specified in row 4 of   Table 5 and data on simplified public procurement rules,   electronic procurement notices, reports and public procurement contracts   specified in row 2 of Table 5 and electronic procurement data specified in row 1   of Table 5 according to access authorisation.
 
+### NON-FUNCTIONAL REQUIREMENTS
+
 ####	Security and confidentiality requirements 
 Priority directions of CPP IS electronic information security:
 •	CPP IS must be upgraded in accordance with the security requirements of the specified legal acts applicable to CPP IS, the importance of the information processed by CPP IS and the category of CPP IS for information systems;
