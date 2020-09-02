@@ -321,14 +321,89 @@ The data available and provided to CPP IS user according to access authorisation
 
 _Table 6. Data available/provided to CPP IS users_
 
-No | CPP IS users | Provided information/data
--- | -- | --
-1. | PPO employees | All data provided in Table 5 according to access authorisation.
-2. | Public | Data for CPP IS publication specified in row 4 of   Table 5.
-3. | Executors of the   procurement | Data for CPP IS publication specified in row 4 of   Table 5 and data on simplified public procurement rules,   electronic procurement notices, reports and public procurement contracts   specified in row 2 of Table 5 and electronic procurement data specified in row 1   of Table 5 according to access authorisation.
-4. | Implementing Agencies | Data for CPP IS publication specified in row 4 of   Table 5 and data on simplified public procurement rules,   electronic procurement notices, reports and public procurement contracts   specified in row 2 of Table 5 and electronic procurement data specified in row 1   of Table 5 according to access authorisation.
-5. | Supervisory Agencies | All data provided in Table 5.
-6. | Suppliers | Data for CPP IS publication specified in row 4 of   Table 5 and data on simplified public procurement rules,   electronic procurement notices, reports and public procurement contracts   specified in row 2 of Table 5 and electronic procurement data specified in row 1   of Table 5 according to access authorisation.
+<table width="100%">
+<thead>
+<tr>
+<td width="5%">
+<p>No</p>
+</td>
+<td width="25%">
+<p>CPP IS users</p>
+</td>
+<td width="69%">
+<p>Provided information/data</p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td width="5%">
+<p><strong>1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong><strong>&nbsp;</strong></p>
+</td>
+<td width="25%">
+<p>PPO employees</p>
+</td>
+<td width="69%">
+<p>All data provided in Table 5 according to access authorisation.</p>
+</td>
+</tr>
+<tr>
+<td width="5%">
+<p><strong>2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong><strong>&nbsp;</strong></p>
+</td>
+<td width="25%">
+<p>Public</p>
+</td>
+<td width="69%">
+<p>Data for CPP IS publication specified in row 4 of Table 5.</p>
+</td>
+</tr>
+<tr>
+<td width="5%">
+<p><strong>3.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong><strong>&nbsp;</strong></p>
+</td>
+<td width="25%">
+<p>Executors of the procurement</p>
+</td>
+<td width="69%">
+<p>Data for CPP IS publication specified in row 4 of Table 5 and data on simplified public procurement rules, electronic procurement notices, reports and public procurement contracts specified in row 2 of Table 5 and electronic procurement data specified in row 1 of Table 5 according to access authorisation.</p>
+</td>
+</tr>
+<tr>
+<td width="5%">
+<p><strong>4.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong><strong>&nbsp;</strong></p>
+</td>
+<td width="25%">
+<p>Implementing Agencies</p>
+</td>
+<td width="69%">
+<p>Data for CPP IS publication specified in row 4 of Table 5 and data on simplified public procurement rules, electronic procurement notices, reports and public procurement contracts specified in row 2 of Table 5 and electronic procurement data specified in row 1 of Table 5 according to access authorisation.</p>
+</td>
+</tr>
+<tr>
+<td width="5%">
+<p><strong>5.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong><strong>&nbsp;</strong></p>
+</td>
+<td width="25%">
+<p>Supervisory Agencies</p>
+</td>
+<td width="69%">
+<p>All data provided in Table 5.</p>
+</td>
+</tr>
+<tr>
+<td width="5%">
+<p><strong>6.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong><strong>&nbsp;</strong></p>
+</td>
+<td width="25%">
+<p>Suppliers</p>
+</td>
+<td width="69%">
+<p>Data for CPP IS publication specified in row 4 of Table 5 and data on simplified public procurement rules, electronic procurement notices, reports and public procurement contracts specified in row 2 of Table 5 and electronic procurement data specified in row 1 of Table 5 according to access authorisation.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ### NON-FUNCTIONAL REQUIREMENTS
 
