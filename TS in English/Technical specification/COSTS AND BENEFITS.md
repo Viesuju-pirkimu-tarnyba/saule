@@ -6,12 +6,95 @@ Project investments shall mean all costs necessary for the implementation of the
 Table 7. CPP IS modification costs
 
 
-Row No | Title | Measurement units | Quantity | Total €, VAT included
--- | -- | -- | -- | --
-1. | CPP IS 2.0 creation and (or) modification costs | set | 1 | 3   852 305.00
-2. | Hardware, rent costs | set | 1 | 329 244.00
-3. | Acquisition and (or) rent of licenses, copyrights and related rights | - | 1 | 1   000 000.00
-TOTAL: |   |   |   | 5 181 549.00
+<table width="100%">
+<tbody>
+<tr>
+<td width="80">
+<p><strong>Row No</strong></p>
+</td>
+<td width="307">
+<p><strong>Title</strong></p>
+</td>
+<td width="101">
+<p><strong>Measurement units</strong></p>
+</td>
+<td width="71">
+<p><strong>Quantity</strong></p>
+</td>
+<td width="99">
+<p><strong>Total &euro;, VAT included </strong></p>
+</td>
+</tr>
+<tr>
+<td width="80">
+<p><strong>1.</strong></p>
+</td>
+<td width="307">
+<p>CPP IS 2.0 creation and (or) modification costs&nbsp;</p>
+</td>
+<td width="101">
+<p>set</p>
+</td>
+<td width="71">
+<p>1</p>
+</td>
+<td width="99">
+<p>3 852&nbsp;305.00</p>
+</td>
+</tr>
+<tr>
+<td width="80">
+<p><strong>2.</strong></p>
+</td>
+<td width="307">
+<p>Hardware, rent costs&nbsp;</p>
+</td>
+<td width="101">
+<p>set</p>
+</td>
+<td width="71">
+<p>1</p>
+</td>
+<td width="99">
+<p>329&nbsp;244.00</p>
+</td>
+</tr>
+<tr>
+<td width="80">
+<p><strong>3.</strong></p>
+</td>
+<td width="307">
+<p>Acquisition and (or) rent of licenses, copyrights and related rights</p>
+</td>
+<td width="101">
+<p>-</p>
+</td>
+<td width="71">
+<p>1</p>
+</td>
+<td width="99">
+<p>1 000&nbsp;000.00</p>
+</td>
+</tr>
+<tr>
+<td width="80">
+<p><strong>TOTAL:</strong></p>
+</td>
+<td width="307">
+<p>&nbsp;</p>
+</td>
+<td width="101">
+<p>&nbsp;</p>
+</td>
+<td width="71">
+<p>&nbsp;</p>
+</td>
+<td width="99">
+<p><strong>5 181&nbsp;549.00</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
 
 
 ## 7.2 USE AND MAINTENANCE COSTS  
