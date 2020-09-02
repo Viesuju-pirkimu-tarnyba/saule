@@ -129,15 +129,118 @@ CPP IS does not implement internal data flows, i.e. there is no data exchange be
 CPP IS data groups and data are described in Table 5.
 Table 5. CPP IS data groups and data
 
-No | Data group | Data description
--- | -- | --
-1. | Electronic procurement   data | ·        Data on legal entities registered in CPP IS: object   code (9 digits); code before the establishment of the Register of Legal   Entities (7 digits); current name of the object; legal form code; legal   status code; the date of registration of the object; date of establishment of   the object (for traditional religious communities and labour organisations);   date of deregistration; address of the registered office (text and address   elements according to the classification of the Address Register -   identifiers of the administrative unit, place of residence, street, house,   premises or former number); name, surname, position title of the manager;   contact details of the object (telephone, fax, e-mail address, website   address);    ·        Data of persons using CPP IS: departments, user groups, user rights;   data on natural persons registered in CPP IS: name, first letter of middle   name, surname, position, e-mail address, telephone number, mobile telephone   number, fax number, username, password, user role in the organisation   (organisation account user, organisation account administrator);   ·        unique identified of the electronic procurement – CTM number;   ·        basic data of electronic procurement - description; electronic   procurement method; an indication of whether the electronic procurement is subdivided   into lots; electronic signature setting (options: no signature or XAdES);   tender assessment criteria; the number of steps in the electronic procurement   procedure;   ·        data of recipients of notices (name and surname);   ·        common Public Procurement Vocabulary (hereinafter referred to as the   CPPV) data (code, name);   ·        electronic procurement procedure date;   ·        notice place data (CVPP; CPP IS, official EU publications);   ·        note whether this project refers to the EU Structural Funds;    ·        price presentation settings (total price; prices of purchased   objects);   ·        data of the electronic procurement object - components of the object,   price, comments, additional documents;   ·        questions for suppliers - minimum qualification requirements, other   questions, comments;   ·        electronic procurement documents;   ·        composition of the electronic procurement commission (names and   surnames of the commission members);   ·        the procedure of opening the envelopes (names, surnames, date of   opening of the commission members, IP address of the commission member);   ·        assessment of tenders;   ·        data on contract award settings (supplier`s name, price);   ·        tender data: answers to questions, documents, tender price data   (price, currency), electronic certificate data (name, surname, e-mail   address, name of the unit of the organisation, name of the organisation,   country, term of validity of the certificate, serial number of the   certificate);   ·        details of correspondence between the contracting authority and the   supplier: notice number, subject, sender, date; notice, attached documents;   ·        electronic procurement audit data: date, time, type of action, details   of the subject of the action (name and surname of the internal user of the   organisation).
-2. | Data on simplified public procurement rules,   electronic procurement notices, reports and public procurement contracts | ·        details of simplified procurement rules: name of the contracting   authority, code of the contracting authority, title of the rules,   description, files, date of receipt, date of publication, date of validity,   reason for cancellation;   ·        data on electronic procurement notice forms established in the Law on   Public Procurement, the Law on Public Procurement in the Field of Defence and   Security, the Law on the Energy Resources Market and by-laws, approved by   Commission Implementing Regulation (EU) 2015/1986 of 11 November 2015   establishing standard forms for the publication of notices in the field of   public procurement and repealing Implementing Regulation (EU) No 842/2011,   Order No 1S-178 of the Director of the Public Procurement Office 2015 October   30 by order no.  “On Approval of the   Description of the Procedure for Preparation and Submission of Notices on   Procurement of Energy or Fuel Needed for the Generation of Electricity and   Heat Energy”:   o    simplified procurement notice;   o    procurement notices;   o    project competition notices;   o    advance notices;   o    changes of notices;    o    cancellation of notices;   o    contract award notices;   o    notices about the results of the   project competition;   o    qualification systems;   o    buyer profile notices;   o    work concessions;   o    notices of changes and   cancellations;   o    information messages;   o    a report on voluntary ex-ante   transparency;   o    subcontracting notices;   o    fuel notice of energy companies;   o    advance fuel notice of the energy   company;   o    personal data processed in   notices: name, surname.   ·        Data of electronic procurement reports established in the Law on   Public Procurement, the Law on Public Procurement in the Field of Defence and   Security, the Law on the Energy Resources Market and by-laws, approved by   Order No 1S-152 of the Director of the Public Procurement Office of 20   October 2010 “On declaration Order No 1S-53 of the Director of the Public   Procurement Office of 14 April 2010 “On amendment of Order No 1S-4 of the   Director of the Public Procurement Office under the Government of the   Republic of Lithuania of 19 January 2006 “On approval of the description of   the procedure on preparation and submission of procurement reports and forms   of public procurement reports“ null and void”, Order No 1S-250  of the Director of the Public Procurement   Office of 17 December 2013 “On the approval of the description of the   procedure for preparation and submission of reports on public procurement in   the field of defence and security”, Order No 1S-179 of the Director of the   Public Procurement Office of 30 October 2015 “On approval of the Description   of the Procedure for Preparation and Submission of the Report on Procurement   Procedures for Energy or Fuel Needed for the Generation of Electricity and   Heat Energy”:   o    reports on public procurement   procedures in the field of defence and security;   o    reports on public procurement   contracts completed or terminated in the field of defence and security   procurement;   o    public procurement reports for   procurements in the field of defence and security;   o    a description of the procedures   for preparing and submitting reports on public procurement in the field of   defence and security;   o    reports on public procurement   procedures;   o    reports on project tender   procedures;   o    completed or terminated   procurement contract reports;   o    public procurement reports;   o    reports on procurement procedures   for energy or fuel required for the generation of electricity and heat   energy;   o    personal data processed in the   reports: name, surname.   ·        Data on contracts - the link with the public procurement, the   successful tender, the concluded contract and changes to the terms of the   procurement contract (specify what is included in the uploaded contract):   o    contracts awarded for cross-border   and simplified procurement subject to reporting on procurement procedures;   o    contracts for low value purchases;   o    main contracts awarded on the   basis of framework contracts;   o    contracts concluded in accordance   with Article 85 (6) of the Law on Public Procurement;   o    contract amendments.
-3. | CTM classifiers | ·        list of electronic procurement method templates;   ·        CPPV code classifier;   ·        message template classifier;   ·        classifier of qualification issues;   ·        work list classifier;   ·        classifier of Articles of the Law on Public Procurement;   ·        classifier of electronic procurement methods;   ·        list of type codes of contracting authorities;   ·        classifier of the Common Public Procurement Vocabulary;   ·        classifier of economic activities;   ·        list of service categories;   ·        classifier of product types;   ·        classifier of types of work;   ·        country classifier;   ·        currency classifier;   ·        time zone classifier;   ·        classifier of the field of activity;   ·        language classifier.
-4. | Data for publication | ·         name of the procurement;   ·         type of notice;   ·         name of the organisation;   ·         date of publication;   ·         in accordance with the provisions of the   LLPPD, information on suppliers who failed to perform or improperly performed   the procurement contract is published when the procurement contract has been   terminated due to a material breach of the contract, as defined in the Civil   Code of the Republic of Lithuania (hereinafter - material breach of the   contract) or when a court decision satisfying the Executor`s requirements to   declare non-performance or improper performance of the procurement contract   and indemnification of the related losses comes into force (date of data entry,   date of the term of three years during which the supplier is in list of   unreliable suppliers, name of the contracting authority, name of responsible   person, name of supplier, supplier`s (legal entity`s) code, name of the   procurement object, type, code according to CPPV, procurement number,   procurement contract index, date of termination of the procurement contract   or effective date of the court decision, reasons for termination of the   procurement contract, documents conforming the breach);   ·         list of officially approved suppliers is   published in accordance with the provisions of the LLPPD (serial number,   group of economic operators, name, code, date of listing, date of validity of   the certificate, certificate number);   ·         CVPP subscription for data from the network   (RSS subscription);   ·         judgments / decrees are published in   accordance with the provisions of the LLPPD (digital copies of documents);   ·         list of companies specified in Article 91 of   the Law on Public Procurement;   ·         information: news, links, statistics, useful   information;   ·         consents to negotiations without publication;   ·         data on the contracting authority:   organisation code, organisation name, organisation address, telephone number,   organisation type code;   ·         data on the electronic procurement object:   object code, object name; description of the lots of the procurement object;   ·         data on the method of public procurement:   method of procurement; Article, paragraph, item of the Law on Public   Procurement, according to which the method of electronic procurement was chosen;   number and date of the resolution of the Government of the Republic of   Lithuania on the consent to apply the chosen public procurement method;   ·         data on public procurement funds: code of   procurement funds;   ·         details of the award of public contracts: date   of the decision on the successful tender; concluded contracts - description   of the lots of the procurement object, names of suppliers (Executors), dates   of concluding contracts, prices specified in the contracts; non-concluded   contracts - lot numbers of the procurement object, reasons;   ·         supplier details: supplier code; name of the   supplier; supplier`s address, telephone number, fax, e-mail address;   ·         • data on the procurement documents submitted   by the contracting authority: description - a brief description of the   procurement document; specific file (attached to the procurement document   file);   ·         • news data: headline; date of publication; a   brief description of the news; news content;   ·         • details of the supplier`s representative:   name, surname; e-mail address; workplace telephone number; workplace internet   address; Username; user password.
-5. | Invoice data | ·         the series and number of the   credit and debit document and the advance invoice; date of issue of the VAT   invoice, credit and debit document and advance invoice; seller (seller`s   legal entity code, seller`s name, seller`s address, VAT payer`s code); buyer   (buyer`s legal entity code, buyer`s name, buyer`s address, VAT payer`s code);   contract number; contract identifier; goods or services (name, quantity, price   per unit of the supplied goods or services (excluding VAT), VAT rate (rates)   and code (codes), VAT amount), amount; currency
-6. | Data received from the European Union Structural   Assistance Subsystem for 2007-2013 | ·         Project Code, Operational Program Code, Priority   Code, Measure Code, Project Name, Project Executor Name, Project Executor   Code, Implementing Agency, Intermediate Authority Name, Funding Value,   Project Cost Value, Project financing and administration agreement effective   date, Project activities implementation commencement date, Project activities   implementation completion date, Project stage, Project status, Partner name,   Partner code, Suspicion identification SFMIS code, Project code, Suspicion   registration date, Suspicion investigation status (0 - in progress, 1 -   completed), Suspicion investigation completion date, Description of the   suspicion, Is an offence found? (0 - no, 1 - yes), Offence identification   SFMIS code, Offence unique code, Offence detection date, Offence type code   (classification in the system), Offence additional type code (classification   in the system).
-7. | Data received from European Union   Structural Funds for 2014-2020 | ·         user data (SFMIS username, date of removal,   user status, name, surname, institution, position, telephone number, e-mail,   Project Code, Operational Program Code, Priority Code, Measure Code, Project   Name, Project Executor Name, Project Executor Code, Implementing Agency,   Intermediate Authority Name, Funding Value, Project Cost Value, Project   financing and administration agreement effective date, Project activities   implementation commencement date, Project activities implementation   completion date, Project stage, Project status, Partner name, Partner code,   Suspicion identification SFMIS code, Project code, Suspicion registration   date, Suspicion investigation status (0 - in progress, 1 - completed),   Suspicion investigation completion date, Description of the suspicion, Is an   offence found? (0 - no, 1 - yes), Offence identification SFMIS code, Offence   unique code, Offence detection date, Offence type code (classification in the   system), Offence additional type code (classification in the system).
+Facebook
+Twitter
+Linkedin
+Reddit
+Word to Clean HTML ConverterWord Editor HTML
+Undo New page indentation compress encoding 
+option ico
+option2 
+option3
+option4 
+option5
+option6 
+option7
+option8Clean
+<table width="100%">
+<thead>
+<tr>
+<td width="8%">
+<p>No</p>
+</td>
+<td width="23%">
+<p>Data group</p>
+</td>
+<td width="68%">
+<p>Data description</p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td width="8%">
+<p><strong>1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong><strong>&nbsp;</strong></p>
+</td>
+<td width="23%">
+<p>Electronic procurement data</p>
+</td>
+<td width="68%">
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Data on legal entities registered in CPP IS: object code (9 digits); code before the establishment of the Register of Legal Entities (7 digits); current name of the object; legal form code; legal status code; the date of registration of the object; date of establishment of the object (for traditional religious communities and labour organisations); date of deregistration; address of the registered office (text and address elements according to the classification of the Address Register - identifiers of the administrative unit, place of residence, street, house, premises or former number); name, surname, position title of the manager; contact details of the object (telephone, fax, e-mail address, website address);</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Data of persons using CPP IS: departments, user groups, user rights; data on natural persons registered in CPP IS: name, first letter of middle name, surname, position, e-mail address, telephone number, mobile telephone number, fax number, username, password, user role in the organisation (organisation account user, organisation account administrator);</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; unique identified of the electronic procurement &ndash; CTM number;</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; basic data of electronic procurement - description; electronic procurement method; an indication of whether the electronic procurement is subdivided into lots; electronic signature setting (options: no signature or XAdES); tender assessment criteria; the number of steps in the electronic procurement procedure;</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; data of recipients of notices (name and surname);</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; common Public Procurement Vocabulary (hereinafter referred to as the CPPV) data (code, name);</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; electronic procurement procedure date;</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; notice place data (CVPP; CPP IS, official EU publications);</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; note whether this project refers to the EU Structural Funds;</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; price presentation settings (total price; prices of purchased objects);</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; data of the electronic procurement object - components of the object, price, comments, additional documents;</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; questions for suppliers - minimum qualification requirements, other questions, comments;</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; electronic procurement documents;</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; composition of the electronic procurement commission (names and surnames of the commission members);</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the procedure of opening the envelopes (names, surnames, date of opening of the commission members, IP address of the commission member);</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; assessment of tenders;</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; data on contract award settings (supplier`s name, price);</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tender data: answers to questions, documents, tender price data (price, currency), electronic certificate data (name, surname, e-mail address, name of the unit of the organisation, name of the organisation, country, term of validity of the certificate, serial number of the certificate);</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; details of correspondence between the contracting authority and the supplier: notice number, subject, sender, date; notice, attached documents;</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; electronic procurement audit data: date, time, type of action, details of the subject of the action (name and surname of the internal user of the organisation).</p>
+characters: 19108
+Sample
+  
+
+ 
+×
+Paste or compose your doc in the editor and switch to HTML view to get the code!
+Word Doc to HTML Online Converter
+Word Document to HTML Online Converter
+Paste your doc and switch to the HTML tab
+Free online Word to HTML converter with built-in code cleaning features and easy switch between the visual and source editors. It works perfectly for any document conversion, like Microsoft Word, Excel, PowerPoint, PDF, Google Docs, Sheets, and many more. You can also use this tool for composing web content from scratch or just to tidy up the dirty markup.
+
+As a legacy of the well-known but discontinued WordOff online tool we wanted to keep the user interface as simple as possible and adding many new features according to the visitor feedbacks.
+
+
+ 
+How to Convert Doc to HTML?
+The process is very simple with this free online tool and it requirest just a few simple steps:
+
+Open your file with Microsoft Word, WPS Writer or any other rich text editor.
+Copy-paste the content into the area above.
+Switch to the HTML tab and clean the code.
+Wordpress HTML Editor
+Word HTML is the perfect tool to edit the source code of WordPress articles or any other content management system when their built in composer doesn't provide all functionalities we need. Compose the content right in your browser window without installing any extension or plugin to handle the syntax highlighting and other text editing features.
+
+How To Use?
+Paste the document you want to convert in the Word Editor, then switch to HTML view using the big tabs at the top of the page to generate the code.
+
+Clean the dirty markup with the big button which performs the active (checked) options in the list. You can also apply these features one-by-one with the execute icon. When a clean operation is performed the program might add a paragraph to the text, containing a backlink to one of our partner sites. Please leave these unchange to support the this free website.
+
+styles  –  remove style attributes from each tag:<span style="color: red;">highlighted</span>
+empty icon  –  delete empty tags which don't contain anything:<span>Hello<span></span> World</span>
+spaces  –  clear successive non-breaking spaces and leave only one instance:<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+attributes  –  get rid of tag attributes (except href of links and src of images):<img src="/icon.png" alt="icon" width="52" height="52" id="pic52" />
+class and id ico  –  strip classes and IDs:<img id="pic52" class="right" src="/icon.png" alt="icon" width="52" />
+space ico  –  wipe off elements that contain only a &nbsp; character:<p>&nbsp;</p>
+comments  icon  –  dislodge HTML comments:<!-- comment -->
+plain text icon  –  convert the document to plain text:<p><span class="header">text</span></p>
+Additional editor controls
+source editor commands  –  Undo, new page, indent markup, compress, activate encoding.
+
+EssaysMatch- cheap essay writing service.
+Omnipapers.com reviews will help you to pick an honest essay company.
+My Homework Done can help with any subject, from math to programming.
+With Ewritingservice.com you will never have to worry about writing your paper.
+Cheapwritingservice.com - best writing service with 100+ available experts.
+Rapidessay.com - best college essay writing service
+Any complicated coding task can be done by Edubirdie essay writing platform in 3 hours time limit.
+Professional writing service Copycrafter offers college essays for sale.
+The WordOff Legacy
+WordOff editor used to be the most popular dirty HTML cleaner. Unfortunately this project has been discontinued and with WordHTML we want to become its worthy successor, providing all its capabilities and even going further with the available options and user experience.
+
+This site uses cookies to collect visitor statistics and to save your settings.
+By using this website you accept our Terms & Conditions.
+©WordHTML.com
 
 ### DATA PROVISION AND USE
 
