@@ -1,4 +1,4 @@
-<h1><a name="_Toc47976593"></a><a name="_Toc47027196"></a>1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SUSIJUSIŲ DOKUMENTŲ SĄRA&Scaron;AS</h1>
+<h1><a name="_Toc47976593"></a><a name="_Toc47027196"></a>4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SUSIJUSIŲ DOKUMENTŲ SĄRA&Scaron;AS</h1>
 <ol>
 <li>Teisės aktai ir metodiniai dokumentai, kuriuos turi atitikti paslaugų rezultatas bei kurių aktualiomis redakcijomis (pakeitimais) turi vadovautis Diegėjas teikdamas paslaugas:
 <ul>
