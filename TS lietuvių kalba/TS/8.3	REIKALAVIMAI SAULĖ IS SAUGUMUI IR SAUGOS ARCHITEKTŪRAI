@@ -1,0 +1,107 @@
+2435.  Žemiau pateikiama principinė Saulė IS saugos (hibridinės saugos) architektūros schema.
+
+![image](https://user-images.githubusercontent.com/61745726/98491876-dd3cd400-223e-11eb-93b6-183cbf65ebb9.png)
+
+2436. SAULĖ IS saugos architektūra turi būti išskaidyta į tris saugos sluoksnius:
+2436.1. Į pirmąjį saugos sluoksnį turi patekti VPT ir kitų priežiūros ir įgyvendinančių institucijų patalpose esanti infrastruktūra ir joje veikiantys komponentai;
+2436.2. Antrasis saugos sluoksnis turi apimti ryšių tinklus ir komunikaciją jais. Saugi komunikacija ryšių tinklais turi būti užtikrinama naudojant VPN, HTTPS ir kitas lygiavertes saugaus ryšio užtikrinimo priemones ir technologijas. Išorinių portalo „SAULĖ“ naudotojų (Visuomenės, Pirkimo vykdytojų, Tiekėjų) prieigai prie portalo „SAULĖ“ turi būti naudojamas HTTPS protokolas, o VPT ir kitų priežiūros ir įgyvendinančių institucijų specialistų prieigai prie SAULĖ IS vidinio portalo ir susijusių komponentų papildomai turi būti naudojami VPN protokolai;
+2436.3. Trečiasis saugos sluoksnis turi apimti VDPT infrastuktūroje dislokuotus SAULĖ IS komponentus
+
+#### 8.3.1	Reikalavimai saugą reglamentuojančių teisės aktų taikymui
+
+2437. Pagrindiniai saugą (tiek programinės įrangos, tiek duomenų) reglamentuojantys teisės aktai, kuriais turi būti vadovaujamasi modernizuojant SAULĖ IS yra šie:
+2437.1. 2016 m. balandžio 27 d. Europos Parlamento ir Tarybos reglamentas (ES) 2016/679 dėl fizinių asmenų apsaugos tvarkant asmens duomenis ir dėl laisvo tokių duomenų judėjimo ir kuriuo panaikinama Direktyva 95/46/EB (Bendrasis duomenų apsaugos reglamentas (BDAR)), saugumo valdymo standartas LST ISO/IEC 27001:2017 „Informacinės technologijos. Saugumo metodai. Informacijos saugumo valdymo sistemos. Reikalavimai“, LST ISO/IEC 27002:2017 „Informacinės technologijos. Saugumo metodai. Informacijos saugumo kontrolės priemonių praktikos nuostatai“ ir ISO/IEC 27701:2019 „Saugumo metodai – ISO/IEC 27001 ir ISO/IEC 27002 papildymas dėl privatumo valdymo – Reikalavimai ir gairės“;
+2437.2. Lietuvos Respublikos asmens duomenų teisinės apsaugos įstatymas;
+2437.3. Lietuvos Respublikos kibernetinio saugumo įstatymas;
+2437.4. Techninių kibernetinio saugumo reikalavimų, taikomų subjektams, valdantiems ir (arba) tvarkantiems valstybės informacinius išteklius, ypatingos svarbos informacinės infrastruktūros valdytojams, sąrašas, patvirtintas Lietuvos Respublikos Vyriausybės 2018 m. gruodžio 5 d. nutarimu Nr. 1209 „Dėl Lietuvos Respublikos Vyriausybės 2018 m. rugpjūčio 13 d. nutarimo Nr. 818 „Dėl Nacionalinės kibernetinio saugumo strategijos patvirtinimo“ pakeitimo“;
+2437.5. Techniniai valstybės registrų (kadastrų), žinybinių registrų, valstybės informacinių sistemų ir kitų informacinių sistemų elektroninės informacijos saugos reikalavimai, patvirtinti Lietuvos Respublikos vidaus reikalų ministro 2013 m. spalio 4 d. įsakymu Nr. 1V-832 „Dėl Techninių valstybės registrų (kadastrų), žinybinių registrų, valstybės informacinių sistemų ir kitų informacinių sistemų elektroninės informacijos saugos reikalavimų patvirtinimo“;
+2437.6. Bendrųjų elektroninės informacijos saugos reikalavimų aprašas, patvirtintas Lietuvos Respublikos Vyriausybės 2013 m. liepos 24 d. nutarimu Nr. 716 „Dėl Bendrųjų elektroninės informacijos saugos reikalavimų aprašo, Saugos dokumentų turinio gairių aprašo ir Elektroninės informacijos, sudarančios valstybės informacinius išteklius, svarbos įvertinimo ir valstybės informacinių sistemų, registrų ir kitų informacinių sistemų klasifikavimo gairių aprašo patvirtinimo“;
+2437.7. Duomenų teikimo formatų ir standartų rekomendacijos, patvirtintos Informacinės visuomenės plėtros komiteto prie Susisiekimo ministerijos direktoriaus 2013 m. kovo 25 d. įsakymu Nr. T-36 „Dėl Duomenų teikimo formatų ir standartų rekomendacijų patvirtinimo“.
+
+#### 8.3.2	Reikalavimai duomenų saugai
+2438. Duomenų sauga turi būti užtikrinama:
+2438.1. užtikrinant duomenų vientisumą ir neprieštaringumą;
+2438.2. registruojant SAULĖ IS naudotojų atliekamus veiksmus su duomenimis, įskaitant duomenų paiešką ir peržiūrėjimą;
+2438.3. sukuriant priemones, sudarančias galimybes SAULĖ IS administratoriui patikrinti SAULĖ IS naudotojų veiksmus (SAULĖ IS naudotojų stebėsenos sistema);
+2438.4. numatant apsaugos nuo atsitiktinio duomenų ištrynimo (pvz., perspėjimai apie numatomą duomenų ištrynimą) priemones;
+2438.5. darbui su moduliais SAULĖ IS naudotojus suskirstant į grupes pagal duomenų tvarkymo pobūdį, kai kuriems iš jų suteikiant specialiąsias teises (roles) atlikti tam tikrus tvarkymo veiksmus. SAULĖ IS naudotojų grupių ir rolių aprašymai turi būti parengti analizės ir projektavimo etape;
+2438.6. saugoma informacija negali būti ištrinta jokiais kitais būdais ar aplinkybėmis išskyrus analizės ir projektavimo etapuose numatytais atvejais;
+2438.7. Diegėjas turi suderinti failų formatus, kuriuos leidžiama prisegti SAULĖ IS, ir suderinti juos su VPT (pvz., neturi būti leidžiama prisegti potencialiai nesaugių, galinčių automatiškai pasileisti (angl. self-executive) failų).
+
+#### 8.3.3	Reikalavimai naudotojų valdymo saugumui
+2439. SAULĖ IS turi automatiškai nutraukti SAULĖ IS naudotojų darbo seansą praėjus parametrais apibrėžtam neaktyvumo laikotarpiui ir informuoti apie atjungimo priežastį pranešimu. SAULĖ IS administratoriui turi būti galimybė keisti neaktyvumo laikotarpio parametro reikšmę.
+2440. SAULĖ IS turi būti numatytas SAULĖ IS naudotojų privalomas slaptažodžio keitimas kas nustatytą laikotarpį.
+2441. SAULĖ IS naudotojų vardai, kiti asmens duomenys, kuriems taikomos duomenų apsaugos įstatymo nuostatos, slaptažodžiai turi būti saugomi su tinkamu prieigos kontrolės užtikrinimu ir informacijos šifravimu.
+2442. SAULĖ IS turi būti galimybė suskirstyti SAULĖ IS naudotojus į atskiras roles su skirtingomis priėjimo teisėmis prie atskirų sistemos funkcijų ir pan. SAULĖ IS naudotojas turi galėti peržiūrėti ir keisti tik tokią informaciją ir naudotis tik tokiomis funkcijomis, kurios yra nustatytos priėjimo teisėmis. 
+2443. SAULĖ IS naudotojui pagal jo pateiktą užklausą turi būti rodomi tik tie įrašai, kuriuos jis turi teisę peržiūrėti.
+2444. Vienas SAULĖ IS naudotojas gali turėti tik vieną naudotojo seansą, SAULĖ IS turi užtikrinti, kad veikiant vienam SAULĖ IS naudotojo darbo seansui, nebūtų galima prisijungti naudojantis jo identifikaciniais duomenimis.
+2445. Jei autentifikavimo būdas pasirinktas „SAULĖ IS priemonėmis“, SAULĖ IS naudotojai turi turėti galimybę inicijuoti savo slaptažodžio keitimo procedūrą.
+2446. SAULĖ IS turi būti galimybė nustatyti prisijungimo slaptažodžio minimalų reikalaujamą ilgį. Turi būti galimybė keisti slaptažodžio minimalaus reikalaujamo ilgio reikšmę. 
+2447. SAULĖ IS turi būti galimybė nustatyti ir keisti prisijungimo slaptažodžio sudėtingumą skirtingoms naudotojų grupėms (pvz., naudotojų slaptažodį turi sudaryti 8 simboliai, iš kurių bent 2 skaičiai ir bent viena didžioji raidė, administratorių slaptažodžiui turi būti galima nustatyti griežtesnius reikalavimus). 
+2448. SAULĖ IS neturi sudaryti sąlygų spėlioti slaptažodžius. 
+2449. SAULĖ IS neturi vaizduoti įvedamo slaptažodžio.
+2450. SAULĖ IS turi būti galimybė nustatyti naudotojo neteisingų prisijungimų skaičių, po kurio naudotojo prisijungimo vardas būtų blokuojamas. Prisijungimų skaičius turi būti apibrėžtas parametru, kurį gali koreguoti sistemos administratorius. Taikoma tik autentifikavimo būdui „SAULĖ IS priemonėmis“.
+2451. SAULĖ IS audito ir saugos modulyje veikiantis privilegijuotų naudotojų valdymo sprendimas turi užtikrinti galimybę sistemos administratoriams suteikti prieigą prie SAULĖ IS programinės įrangos neatskleidžiant jiems slaptažodžių arba suteikiant vienkartinius prisijungimo slaptažodžius.
+
+#### 8.3.4	Reikalavimai auditavimui
+2452. Turi būti vykdomas visų SAULĖS IS komponentų funkcionalumo naudojimo (naudotojų atliekamų veiksmų) auditavimas. 
+2452.1. Rekomenduojami informacijos saugojimo momentai:
+2452.1.1. vartotojo autentifikavimasis (prisijungimas) ir darbo sesijos pabaiga sistemoje;
+2452.1.2. atliekama paieška ir paieškos kriterijai (frazės);
+2452.1.3. įvairių parametrų keitimas;
+2452.1.4. duomenų esybių laukų pakeitimas (atnaujinimas, įterpimas, pašalinimas).
+2452.2. Atliekant auditavimo įrašo išsaugojimą duomenų bazėje, turi būti kaupiama:
+2452.2.1. kas atliko veiksmą (vartotojas);
+2452.2.2. kada atliko veiksmą (data, laikas);
+2452.2.3. kokius duomenis atnaujino;
+2452.2.4. kokius duomenis įterpė;
+2452.2.5. naudotojo IP adresas;
+2452.2.6. kokius duomenis pašalino;
+2452.2.7. kokias paieškos frazes naudojo;
+2452.2.8. kita informacija, nustatyta analizės ir projektavimo etapų metu.
+2452.3. Turi būti audituojami integracinėmis sąsajomis siunčiamų / gaunamų duomenų momentai, išsaugant informaciją:
+2452.3.1. iš kokios sistemos, registro ar duomenų bazės gaunami duomenys;
+2452.3.2. į kokią sistemą, registrą ar duomenų bazę siunčiami duomenys;
+2452.3.3. duomenų gavimo/siuntimo data ir laikas;
+2452.3.4. siųsti / gauti duomenys (jeigu tam yra poreikis);
+2452.3.5. kita informacija, nustatyta detalios analizės ir projektavimo etapu metu
+2452.4. Administravimo priemonėmis turi būti galimybė atlikti audito įrašų analizę (paiešką, filtravimą pagal įvairius parametrus). Reikalingi analitiniai veiksmai su auditavimo įrašais turi būti identifikuoti ir suderinti su Perkančiąja organizacija analizės ir projektavimo etapų vykdymo metu.
+2452.5. Audito įrašų peržiūra detalios analizės ir projektavimo etape apsibrėžta apimtimi turi būti galima Sistemos administratoriui, Organizacijos administratoriui, Institucijos administratoriui ar kitam naudotojui, turinčiam audito įrašų tvarkymo teisę.
+2452.6. Siekiant išvengti perteklinės auditavimo informacijos kaupimo tikslūs audito įrašų darymo momentai turi būti identifikuoti analizės ir projektavimo etapų vykdymo metu.
+2453. Visis SAULĖ IS realizuojami moduliai turi būti susieti audito ir saugos moduliu, įgyvendinančiu veiksmų registravimo ir kontrolės mechanizmą (angl. audit trail).
+2454. SAULĖ IS audito ir saugos modulyje turi būti įgyvendintas saugos informacijos ir įvykių valdymo sprendimas, skirtas žurnalinių įrašų rinkimui, kaupimui, auditavimui ir perdavimui į VPT centralizuotą audito įrašų administravimo programinę įrangą. Saugos informacijos ir įvykių valdymo sprendimas turi:
+2455. Sugebėti registruoti žurnalinius įrašus (angl. log records) iš visos SAULĖ IS programinės įrangos.
+2456. Apsaugoti žurnalinius įrašus nuo nesankcionuoto ar netyčinio pakeitimo.
+2457. SAULĖ IS turi būti saugomi visi administravimo parametrų pakeitimai.
+2458. Audito informacija turi būti saugoma be galimybės pakeisti.
+2459. Audito duomenys saugomi nurodytą laikotarpį.
+2460. SAULĖ IS konfigūracijos keitimo veiksmai turi būti registruojami audito įrašais, fiksuojant datą, laiką, keitimą vykdančio SAULĖ IS naudotojo vardą ir keitimo apibūdinimą.
+2461. Turi būti galima eksportuoti pasirinktus audito įrašus į CSV ar lygiaverčio formato rinkmeną.
+2462. Turi būti galimybė archyvuoti audito ir saugos modulio saugomus duomenis. Audito archyvo duomenų keisti turi būti negalima.
+2463. SAULĖ IS naudotojų administravimo modulyje turi būti priemonės kontroliuoti prieigos teises prie audito ir saugos modulio saugomo veiksmų žurnalo.
+2464. Audito žurnalas turi būti sudaromas vadovaujantis „1849-2016 - IEEE Standard for eXtensible Event Stream (XES) for Achieving Interoperability in Event Logs and Event Streams“ standartu.
+
+#### 8.3.5	Rizikų, grėsmių ir pažeidžiamumų valdymas
+2465. Rizikų, grėsmių ir pažeidžiamumų valdymas:
+2465.1. SAULĖ IS Diegėjas privalo vadovautis pripažintomis saugaus programinės įrangos kūrimo metodikomis;
+2465.2. SAULĖ IS Diegėjas privalo užtikrinti, kad visi programinės įrangos kūrime dalyvaujantys darbuotojai susipažinę su saugaus programinės įrangos kūrimo metodikomis;
+2465.3. SAULĖ IS Diegėjas privalo identifikuoti pagrindines sistemos saugumo rizikas, bei saugumo pažeidžiamumus (CWE/SANS TOP 25 Most Dangerous Software Errors ir OWASP 10 Most Critical Web Application Security Risks) ir imtis priemonių rizikų sumažinimui, bei saugumo pažeidžiamumų šalinimui. Diegėjas privalo pateikti deklaraciją dėl CWE/SANS TOP 25 ir OWASP TOP 10 rizikų/pažeidžiamumų identifikavimo ir sėkmingo pašalinimo.
+2465.4. SAULĖ IS Diegėjas privalo pateikti visų, sistemoje naudojamų trečių šalių komponentų sąrašą;
+2465.5. SAULĖ IS Diegėjas privalo imtis tinkamų veiksmų (angl. reasonable effort) užtikrinant, kad trečių šalių komponentai atitinka VPT saugumo reikalavimus;
+2466. Priėmimo testavimo etapo metu (ar kitų sutartu metu) Diegėjas turi sudaryti visas reikiamas sąlygas VPT atstovų specialistams, kurie atliks atsparumo įsilaužimams testavimą. Esant poreikiui Diegėjas turės atlikti konfigūravimo ar programavimo darbus, kurie bus būtini siekiant ištestuoti SAULĖ IS saugumą įvairiais jos naudojimo scenarijais. Diegėjas neturės pateikti jokios programinės ar techninės įrangos, skirtos našumo ir greitaveikos testavimo vykdymui. 
+2467. Diegėjas turi atlikti reikiamus SAULĖ IS programavimo ir / ar konfigūravimo darbus, atsižvelgiant į VPT atstovų atliktų atsparumo įsilaužimams testavimų rezultatus, kad prieš pradedant eksploatuoti SAULĖ IS būti pašalinti visi nustatyti svarbūs saugumo pažeidžiamumai.
+
+#### 8.3.6	Kiti saugos reikalavimai
+2468. Saugumo pataisų ir atnaujinimų valdymas:
+2468.1. SAULĖ IS Diegėjas privalo teikti saugumo pataisas ir atnaujinimus viso sistemos gyvavimo ciklo metu;
+2468.2. Prieš teikiant VPT saugumo pataisas/atnaujinimus jie privalo būti ištestuoti Diegėjo testinėje aplinkoje;
+2468.3. SAULĖ IS Diegėjas privalo užtikrinti sistemos platformos (OS, DBMS, middleware) saugumo pataisų/atnaujinimų palaikymą viso sistemos gyvavimo ciklo metu. Diegėjas privalo ištestuoti ir patvirtinti platformos pataisų/atnaujinimų suderinamumą su SAULĖ IS (arba pasiūlyti alternatyvą – angl. workaround) ne vėliau kaip per 30 dienų po platformos pataisų/atnaujinimo paviešinimo.
+2468.4. Nuotolinė ar lokali neautorizuota prieiga:
+2468.5. Sistemoje draudžiama bet kokia neautorizuota ar nedokumentuota nuotolinė ar lokali prieiga/paskyros ar bet koks slaptas (nedokumentuotas) funkcionalumas galintis pažeisti sistemos saugumą.
+2468.6. Saugi konfigūracija:
+2468.7. SAULĖ IS Diegėjas privalo pateikti detalias sistemos ir platformos (OS, DBMS, middleware) saugumo konfigūravimo instrukcijas;
+2468.8. SAULĖ IS Diegėjas privalo pateikti sistemos funkcionavimui būtinų platformos komponentų, sisteminių paslaugų, prievadų sąrašą. Visi nebūtini SAULĖ IS funkcionalumui komponentai turi būti deaktyvuoti prieš pradedant sistemos eksploataciją.
+2468.9. Tinklo architektūra:
+2468.10. Duomenų srautai tarp skirtingų lygių turi būti dokumentuoti, nurodant reikalingus komunikacijai prievadus ir protokolus, bei ribojami ugniasienių;
+2468.11. Portalas „Saulė“ turi būti atskiroje nuo vidaus naudotojų platformoje ir atskirame tinklo segmente.
+
