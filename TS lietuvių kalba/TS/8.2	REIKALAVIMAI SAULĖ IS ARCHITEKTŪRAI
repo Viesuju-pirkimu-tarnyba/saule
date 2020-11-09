@@ -1,0 +1,113 @@
+<h3><a name="_Toc47976637"></a><a name="_Toc47027241"></a>1.1.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Reikalavimai auk&scaron;tam prieinamumui</h3>
+<ol>
+<li>Architektūrinis sprendimas turi užtikrinti SAULĖ IS auk&scaron;tą prieinamumą (angl. High availability), kuris gali būti realizuojamas virtualizacijos programinės įrangos funkcionalumu, konteinerių orkestravimo programinės įrangos funkcionalumu, operacinių sistemų funkcionalumu, techninės įrangos galimybėmis ar kitos programinės įrangos pagalba. Auk&scaron;tas prieinamumas turi būti realizuojamas paslaugų lygyje, integracijų lygyje ir duomenų lygyje.
+<ul>
+<li>Visų diegiamų komponentų ir jų valdymo komponentų diegimas turi užtikrinti jų auk&scaron;tą prieinamumą. Auk&scaron;to prieinamumo sprendimai turi būti paremti naudojamos PĮ gamintojo rekomendacijomis (pateikiant nuorodas į gamintojo skelbiamas diegimo (auk&scaron;to patikimumo) rekomendacijas).</li>
+<li>Auk&scaron;to prieinamumo sprendimai turi veikti automati&scaron;kai (incidentų atveju). Žmogaus įsitraukimas gali būti reikalingas tik SAULĖ IS veikimą atstatant į būseną, kuri buvo prie&scaron; incidentą.</li>
+<li>Auk&scaron;to prieinamumo sprendimas turi būti apra&scaron;ytas projektavimo dokumente ir patvirtintas VPT.</li>
+<li>Didelių duomenų platformos duomenų mazgai (angl. data nodes) turi būti bent jau triplikuojami. Didelių duomenų valdymo mazgai (angl. name nodes) turi būti diegiami pagal PĮ gamintojo rekomendacijas jų auk&scaron;tam prieinamumui užtikrinti.</li>
+<li>Auk&scaron;to prieinamumo užtikrinimui ir srautų balansavimui turi būti naudojami apkrovų balansatoriai (angl. load balancers), kurie gali būti diegiami kaip programinė įranga arba naudojama specializuota duomenų centro teikiama techninė įranga (angl. appliances).</li>
+<li>Auk&scaron;to prieinamumo sprendimas turi užtikrinti RPO (angl. Recovery point objective) &ndash; 15 min., RTO (angl. Recovery time objective) &ndash; 1 val. (kai tokį ar geresnį paslaugų teikimo lygį užtikrina duomenų centro infrastruktūra).</li>
+<li>Diegėjo suprojektuotas SAULĖ IS sprendimas turi užtikrinti, kad SAULĖ IS prieinamumas būtų ne mažesnis nei 96% laiko visą parą, kiek to neribos SAULĖ IS infrastruktūra (kai tokį ar geresnį paslaugų teikimo lygį užtikrina duomenų centro infrastruktūra).</li>
+<li>SAULĖ IS turi būti suprojektuota su galimybe būti atstatyta ar veikti atsarginiame duomenų centre (Disaster Recovery) į i&scaron; anksto pasiruo&scaron;usią įrangą (warm recovery). Tam turi būti pateiktos reikiamos licencijos, jei to reikia.</li>
+</ul>
+</li>
+</ol>
+<h3><a name="_Toc47976638"></a><a name="_Toc47027242"></a>1.1.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Reikalavimai plečiamumui</h3>
+<ol start="2">
+<li>Architektūra turi palaikyti SAULĖ IS pajėgumų plėtros galimybes prijungiant papildomą techninę įrangą arba virtualią infrastruktūrą;</li>
+<li>Architektūra turi būti projektuojama daugiapakopės architektūros pagrindu, sudarant jos plėtros atskirų sluoksnių lygmenyse galimybes;</li>
+<li>Turi būti sudarytos sistemos plėtros galimybės neatliekant papildomų sistemos perprojektavimo ar realizavimo darbų papildyti sistemą naujais skaičiavimo ar saugyklų resursais. Pajėgumų didinimas turi būti atliekamas nestabdant sistemos darbo.</li>
+</ol>
+<h3><a name="_Toc47976639"></a><a name="_Toc47027243"></a>1.1.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Reikalavimai rezervinių kopijų darymui, atstatymui ir sistemos stebėjimui</h3>
+<ol start="5">
+<li>Diegėjas turi įvertinti VDPT teikiamas paslaugas ir apibrėžti bei realizuoti rezervinių kopijų darymo procesus, priemones ir taisykles. SAULĖ IS turi leisti atstatyti duomenis i&scaron; rezervinių duomenų kopijų. Diegėjas turi apibrėžti ir realizuoti kopijų atstatymo procesus, priemones ir taisykles. Diegėjas turi realizuoti atsarginių kopijų darymo ir atstatymo procesus su VPT pateikta atsarginių kopijų darymo ir atstatymo PĮ (laikinai, iki bus naudojamasi VDPT paslaugomis, kurios turės užtikrinti atsarginių kopijų darymo ir atstatymo PĮ, Perkančioji organizacija pateiks atsarginių kopijų darymo ir atstatymo PĮ pereinamuoju laikotarpiu).</li>
+<li>Turi būti realizuoti sistemos ir jos komponentų veikimo stebėjimo ir i&scaron;ankstinio perspėjimo (angl. <em>monitoring</em>) sprendimai. Sistemos administratoriaus teises turintiems vartotojams turi būti užtikrinta galimybė web priemonėmis stebėti sistemos bei atskirų jos komponentų veikimo rodiklius (aktyvūs vartotojai, atminties panaudojimas, procesorių apkrova ir kiti svarbūs rodikliai) bei gauti prane&scaron;imus sutrikus komponentų veikimui ar rodikliams pasiekus kritines reik&scaron;mes.</li>
+</ol>
+<h3><a name="_Toc47976640"></a><a name="_Toc47027244"></a>1.1.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Reikalavimai mikroservisų architektūrai</h3>
+<ol start="7">
+<li>SAULĖ IS turi būti kuriama ir diegiama vadovaujantis mikroservisų architektūros principais:
+<ul>
+<li>SAULĖ IS turi būti dekomponuojama į logi&scaron;kus, racionalius, savaranki&scaron;kai veikiančius programinius vienetus (mikroservisus), kurie su kitais SAULĖS IS mikroservisais komunikuotų RESTful ar lygiaverčių technologijų principais;</li>
+<li>Mikroservisai turi realizuoti nuosavas duomenų struktūras (tiesiogiai naudojamas tik paties mikroservisų) (i&scaron;imtys taikomos analizės PĮ, dirbtinio intelekto PĮ ir pan.).</li>
+<li>Turi būti naudojama PĮ, kuri užtikrintų automatinį mikroservisų paleidimą veikti (angl. auto scaling), kai yra pasiekiamos nustatytos ribinės mikroserviso apkrovos. Bendras SAULĖS IS sprendimas turi leisti (neriboti) mikroservisų automatinio paleidimo funkcionalumo.</li>
+<li>Turi būti naudojamas mikroservisų paie&scaron;kos servisas (angl. service registry, service discovery).</li>
+<li>Komunikavimui tarp mikroservisų turi būti naudojama žinučių eilių valdymo ar lygiavertė programinė įranga.</li>
+<li>Mikroservisų įdiegimas, veikimas ir i&scaron;jungimas turi būti nepriklausomas nuo kitų mikroservisų veikimo ar neveikimo.</li>
+<li>Turi būti naudojami ir kiti būtini mikroservisų architektūros realizavimo principai, remiantis SAULĖS IS architektūros realizavimui naudojamos PĮ gamintojų rekomendacijomis.</li>
+<li>Naujų SAULĖS IS versijų diegimas neturi reikalauti SAULĖS IS stabdymo (pakartotinio paleidimo).</li>
+<li>Turi būti realizuotas SAULĖS IS komponentų automatizuotas testavimas ir diegimas (angl. Continuous Integration and Delivery (CI/CD)). Turi būti realizuotas automatinis testų vykdymas ir testavimo duomenų generavimas. Diegėjas turi realizuoti automatinius testus ir automatinį testavimo duomenų generavimą pagal projektavimo etape suderintas apimtis, kurios užtikrintų kiek įmanoma platesnį automatizuotą SAULĖ IS funkcionalumo testavimą.</li>
+<li>Turi būti pateiktos priemonės ir realizuoti sprendimai užtikrinantys kuriamų, testuojamų ir diegiamų SAULĖ IS versijų suderinamumą.</li>
+<li>Turi būti pateiktos priemonės ir realizuoti sprendimai užtikrinantys mikroservisų pokyčių valdymą.</li>
+<li>Turi būti naudojami kiti, mikroservisų architektūros užtikrinimui būtini gerosiomis praktikomis paremti sprendimai. Diegėjo siūlomi sprendimai turi būti patvirtinti Perkančiosios organizacijos analizės ir projektavimo etape.</li>
+</ul>
+</li>
+<li>Turi būti vengiama realizuoti monolitines aplikacijas &ndash; programinę įrangą, kuri skirtingus dalykinius uždavinius ir savaranki&scaron;kus panaudos atvejus realizuoja vienoje (ar vos keliuose) aplikacijoje (vienas (ar keli) sukompiliuoti programinės įrangos i&scaron;eities kodų failai įdiegti viename aplikacijų serveryje).</li>
+</ol>
+<h3><a name="_Toc47976641"></a><a name="_Toc47027245"></a>1.1.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Reikalavimai daugiapakopei architektūrai</h3>
+<ol start="9">
+<li>SAULĖ IS architektūra turi būti daugiapakopė (angl. Multi-tier, N-tier), ją turi sudaryti mažiausiai 4 hierarchiniai lygmenys (vaizdavimo, veiklos logikos, duomenų bazės, integracijų). Daugiapakopė architektūra turi būti kombinuojama su mikroservisų architektūra siekiant racionaliausios SAULĖ IS architektūros realizacijos.
+<ul>
+<li>Vaizdavimo lygmuo (angl. Presentation Layer) turi užtikrinti kompiuterinių priemonių visumą prieigai prie SAULĖ IS pateikiamo skaitmeninio turinio galimais skaitmeniniais kanalais ir tuo pačiu prie SAULĖ IS naudotojo sąsajų, reikalingų SAULĖ IS funkcijų atlikimui. Vaizdavimo lygmuo turi sąveikauti su veiklos logikos lygmeniu sisteminių prane&scaron;imų pagalba.</li>
+<li>Veiklos logikos lygmuo (angl. Application Layer) programinėmis priemonėmis turi pilnai ar i&scaron; dalies automatizuoti veiklos procesų žingsnius ar jų dalį bei kontroliuoti programinių funkcijų vykdymo eigą. Veiklos logikos lygmenyje sisteminiai prane&scaron;imai turi būti priimami, apdorojami ir perduodami vaizdavimo lygmeniui. Taip pat &scaron;is lygmuo turi aptarnauti: (a) duomenų lygmenį, teikiant atitinkamas duomenų užklausas, apdorojant gautus duomenis, perduodant juos saugojimui ar keičiant juos; (b) vaizdavimo lygmenį, perduodant į jį i&scaron; duomenų lygmens gautus ir/ ar veiklos logikos lygmenyje apdorotus duomenis bei priimant ir perduodant kitas sistemines instrukcijas.</li>
+<li>Duomenų bazės lygmuo (angl. Database Layer) turi būti realizuotas operacinių sistemų failų sistemos, duomenų bazių, duomenų talpyklų ar saugyklų pavidalu. Duomenų bazės lygmenyje skirtingi duomenų rinkiniai turi būti integruojami į vieną unifikuotą duomenų mainų platformą veiklos logikos lygmenyje esančių komponentų pagalba.</li>
+<li>Integracijų lygmuo (angl. Integration Layer) turi užtikrint reikalingų duomenų mainus tiek tarp vidinių SAULĖ IS komponentų tiek ir su i&scaron;orinėmis informacinėmis sistemomis. Duomenų mainai užtikrinami realizuotomis WS ar RESTful integracinėmis sąsajomis ir/ arba tiesiogine prieiga prie DB.</li>
+</ul>
+</li>
+</ol>
+<h3><a name="_Toc47976642"></a><a name="_Toc47027246"></a>1.1.6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Reikalavimai duomenų modeliui</h3>
+<ol start="10">
+<li>SAULĖ IS duomenų modelis turi būti kuriamas naudojant OCDS (angl. The Open Contracting Data Standard) standarto duomenų modelį (https://www.open-contracting.org/data-standard/):
+<ul>
+<li>Visi techninėje specifikacijoje įvardinti SAULĖ IS duomenys turi būti realizuoti duomenų modelyje, atitinkantį OCDS duomenų modelį;</li>
+<li>Diegėjas turi realizuoti visas duomenų esybes (kartu su atributais ir sąsajomis) pagal OCDS duomenų modelį, kurios yra būtinos siekiant sukurti specifikacijoje įvardintas funkcijas;</li>
+</ul>
+</li>
+<li>Tiekėjas turi realizuoti SAULĖ IS funkcijas (be tų, kurios apra&scaron;ytos specifikacijoje), kurios yra būtinos tvarkyti duomenis (duomenų esybes ir jų atributus), kurie sistemoje bus realizuoti remiantis OCDS ar kitais standartais.</li>
+<li>Duomenys tvarkomi turi būti pagal OCDS standartą ir taikomas turi būti tiems SAULĖ IS procesams, kurie reikalingi bendram planuojamam kurti Europos pirkimų registrui (angl. contract registry). Daugiau informacijos apie planuojamą sukurti Europos pirkimų registrą pateikta &scaron;ioje nuorodoje <a href="https://www.open-contracting.org/2020/01/23/open-contracting-the-eu-in-2020-what-to-expect/">https://www.open-contracting.org/2020/01/23/open-contracting-the-eu-in-2020-what-to-expect/</a>.</li>
+<li>SAULĖ IS turi būti kaupiami visi eForms standarte, apra&scaron;omame 2019 m. rugsėjo 23 d. Komisijos įgyvendinimo reglamente (ES) 2019/1780, apra&scaron;yti duomenų objektai, nebent VPT i&scaron;sakys poreikį tam tikrų duomenų kaupimo SAUPĖ IS atsisakyti. Detalios analizės ir projektavimo etapo metu turės būti pateikiamas eForms standarte apra&scaron;ytų duomenų objektų susiejimas su SAULĖ IS kaupiamais duomenų objektais.</li>
+<li>Projektuojant SAULĖ IS realizaciją, turės būti nuolatos pildomas ir su VPT derinamas struktūrizuotų ir vie&scaron;am pakartotiniam naudojimui teiktinų duomenų sąra&scaron;as.</li>
+<li>SAULĖ IS tvarkomi duomenys turi būti įvedami vieną kartą ir automati&scaron;kai susiejami ar perpanaudojami ten, kur tai gali būti taikoma.</li>
+<li>Žemiau esančioje schemoje yra pateikiama principinė su pirkimu susijusių duomenų objektų struktūra ir tarpusavio sąsajos. Schema neturėtų būti vertinama kaip detalus SAULĖ IS duomenų modelis. Taip pat dėl schemos patogesnio skaitymo joje nėra i&scaron;skirti objektai kurie gali būti keli to paties tipo viename pirkime.</li>
+<li>Schemoje pateikiamas objektų vie&scaron;umas yra orientacinis ir neatspindi dalinio (nepilnos apimties) duomenų vie&scaron;inimo detaliau apra&scaron;omo 5 skyriuje &bdquo;Bendrieji reikalavimai&ldquo; (pateikiant konfidencialių duomenų vie&scaron;inimo reikalavimus (detalizuotus kituose skyriuose pvz. apra&scaron;ant sutarčių vie&scaron;inimą 7.6.9 skyriuje &ldquo;Reikalavimai Sutarties posistemei&rdquo;) ar kylančio i&scaron; veiklos ribojimų (pvz. dėl konkrečių tiekėjų pavadinimo nerodymo informuojant apie vokų su kainomis atidarymo rezultatus apra&scaron;omus apra&scaron;ytus 7.6.5. skyriuje &ldquo;Reikalavimai Pasiūlymų vertinimo posistemei&rdquo;).</li>
+</ol>
+<p>&nbsp;</p>
+
+![image](https://user-images.githubusercontent.com/61745726/98491803-a6ff5480-223e-11eb-949c-5017ed51959c.png)
+
+<h3><a name="_Toc47976643"></a><a name="_Toc47027247"></a>1.1.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kiti reikalavimai architektūrai</h3>
+<ol>
+<li>Turi būti naudojami atviri dokumentų ir duomenų formatai, t. y. oficialiai įregistruoti rinkmenų tarptautiniai standartai (pvz. HTML, PDF/A, PDF, ADOC, TIFF, JPEG, PNG, ODF formatai, OOXML formatai, XML ir kt.).</li>
+<li>SAULĖ IS realizavimui turi būti remiamasi bendrai priimtais technologiniais ir veikimo standartais (pvz., SOA, JEE, OSGi, JMX, JPA, SSL, MTOM ir pan.).</li>
+<li>Esant kelioms galimoms standarto ar reikalavimo interpretacijoms, reikia laikytis geriausios praktikos principo.</li>
+<li>SAULĖ IS turi būti atviros architektūros, t. y. turėti specializuotas, gamintojo pateikiamas programinės įrangos vystymo priemones (angl. Software Development Kit), programinės įrangos naudojimo sąsajas (angl. Application programming interface (API)), leidžiančias be diegėjo pagalbos vystyti SAULĖ IS (papildyti jos funkcionalumą, pritaikyti ją naujai i&scaron;kilusiems VPT poreikiams) bei integruoti ją su kitomis informacinėmis sistemomis.</li>
+<li>SAULĖ IS turi būti galimybė dirbti nutolusioje darbo vietoje, naudojantis saugia nuotoline prieiga (pavyzdžiui, VPN (angl. Virtual Private Network) ar analogi&scaron;komis priemonėmis).</li>
+<li>Visi SAULĖ IS funkciniai komponentai privalo palaikyti Unicode (UTF &ndash; 8) standartą.</li>
+<li>SAULĖ IS architektūriniai komponentai turi būti plačiai naudojami praktikoje ir būti stabilūs. Neturi būti naudojamos programinių komponentų versijos, kurios yra testavimo stadijoje.</li>
+<li>SAULĖ IS turi būti suprojektuota ir realizuota taip, kad būtų lanksti modifikuojant &ndash; realizavus funkcionalumo pakeitimus vienoje ar keliose funkcinėse srityse, pakeitimai neturi būti visos sistemos perkūrimo priežastimi.</li>
+<li>Turi būti užtikrinta, kad atliekami SAULĖ IS naudotojų veiksmai neblokuotų kitų SAULĖ IS naudotojų veiksmų ir nedarytų įtakos SAULĖ IS greitaveikai, i&scaron;skyrus atvejus, kai dėl duomenų integralumo, SAULĖ IS naudotojams blokuojama prieiga prie tuo metu kitų SAULĖ IS naudotojų tvarkomų duomenų. Jeigu yra sąlygų, kurioms esant vyksta SAULĖ IS naudotojo blokavimas, &scaron;ios sąlygos turi būti apra&scaron;ytos ir suderintos. Apie blokavimo priežastis SAULĖ IS naudotojai turi būti informuoti informatyviais prane&scaron;imais, pateikiamais blokavimo metu.</li>
+</ol>
+<h3><a name="_Toc47976644"></a><a name="_Toc47027248"></a>1.1.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Reikalavimai standartų taikymui</h3>
+<ol start="10">
+<li>SAULĖS IS realizavimui neapsiribojant turi būti taikomi &scaron;ie standartai:
+<ul>
+<li>ODBC (angl. Open Database Connectivity) arba JDBC (angl. Java Database Connectivity) pagrindu veikiančios arba lygiavertės taikomosios programinės įrangos programavimo sąsaja (API) prisijungimui prie duomenų bazių.</li>
+<li>SOAP saityno paslaugų priemonėmis vykdomų duomenų mainų protokolas (angl. Simple Object Access Protocol, www.w3.org/TR/soap/) v1.1.</li>
+<li>Saityno paslaugų funkcionalumo apra&scaron;ymo kalba WSDL (angl. Web Services Description Language, http://www.w3.org/TR/wsdl) arba lygiavertė.</li>
+<li>Elektroninio pa&scaron;to žinučių siuntimo protokolas SMTP (angl. Simple Mail Transfer Protocol, http://tools.ietf.org/html/rfc821).</li>
+<li>Saityno paslaugų interoperabilumo WS-I arba lygiaverčiai standartai ir specifikacijos (angl. Web Services Interoperability, http://www.ws-i.org/).</li>
+<li>Turi būti naudojamas SSL arba lygiavertis kriptografinis protokolas internetu perduodamos informacijos saugai užtikrinti (angl. Secure Sockets Layer) &scaron;iuose komunikacijos scenarijuose: sistema &ndash; naudotojas ir sistema &ndash; sistema.</li>
+<li>Turi būti naudojamas saityno paslaugų saugos WS-Security (angl. Web Services Security, www.oasis-open.org/committees/wss/) arba lygiaverčiai standartai ir specifikacijos.</li>
+<li>SAULĖ IS duomenų mainų saugos ir patikimumo užtikrinimui, SAULĖ IS realizuojamos saityno paslaugos turi naudoti WS-* standartų grupės arba lygiaverčius protokolus, tokius kaip: WS-Security, WS-Secure Conversation, WS-SecurityPolicy, WS-MetadataExchange, WS-Trust, WS-AtomicTransaction, WS-ReliableMessaging.</li>
+<li>HTTP (Hypertext Transfer Protocol) (<a href="https://tools.ietf.org/html/rfc2616">https://tools.ietf.org/html/rfc2616</a>).</li>
+<li>JSON (JavaScript Object Notation) duomenų perdavimui ir saugojimui (<a href="https://tools.ietf.org/html/rfc7159">https://tools.ietf.org/html/rfc7159</a>).</li>
+<li>URI (Uniform Resource Identifier) (<a href="https://tools.ietf.org/html/rfc3986">https://tools.ietf.org/html/rfc3986</a>).</li>
+<li>XML (Extensible Markup Language) (<a href="https://www.w3.org/TR/xml/">https://www.w3.org/TR/xml/</a>).</li>
+<li>CSS (Cascading Style Sheets) (<a href="https://www.w3.org/Style/CSS/specs.en.html">https://www.w3.org/Style/CSS/specs.en.html</a>).</li>
+<li>ISO/IEC 20546:2019 Information technology - Big data - Overview and vocabulary.</li>
+<li>LDAP (Lightweight Directory Access Protocol) (<a href="https://tools.ietf.org/html/rfc4511">https://tools.ietf.org/html/rfc4511</a>).</li>
+<li>AMQP (Advanced Message Queuing Protocol) (<a href="http://docs.oasis-open.org/amqp/core/v1.0/amqp-core-messaging-v1.0.html">http://docs.oasis-open.org/amqp/core/v1.0/amqp-core-messaging-v1.0.html</a>).</li>
+<li>Programinio kodo kokybės užtikrinimo standartas (ISO/IEC 25010:2011 Systems and software engineering &mdash; Systems and software Quality Requirements and Evaluation (SQuaRE) &mdash; System and software quality models).</li>
+</ul>
+</li>
+</ol>
