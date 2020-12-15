@@ -113,7 +113,8 @@ Table 7.1. Description of SAULĖ IS users
 
 35. On the figure below one can find the possible architecture of the SAULĖ IS components (application software, data management software, integration software, frameworks, etc.). In the detailed analysis and design phase, the components demonstrated on the diagram can be decomposed by splitting them into other separate physical and logical components, ensuring that all functional and non-functional requirements for the component are met. The final architecture may be revised and must be agreed with the Contracting Authority.
 
-![image](https://user-images.githubusercontent.com/61745726/92297297-8832c800-ef46-11ea-8049-29996351dc1b.png)
+![image](https://user-images.githubusercontent.com/61745726/102211087-c3e11480-3edb-11eb-9614-3345129257a9.png)
+
 Fig. 7.2. Diagram of architecture of SAULĖ IS components
 
 36. Description of architecture components: 
@@ -200,15 +201,15 @@ Table 7.2. Description of architecture components
 </td>
 <td width="66%">
 <p>4.1. Databases (DBs) must be installed in SAULĖ IS, which must ensure the management of structured data of SAULĖ IS components. The following DBs must be installed:</p>
-<p>4.2. DB of &ldquo;Saulė&rdquo; Portal;</p>
-<p>4.3. Internal portal DB;</p>
-<p>4.4. Analytics Tool (BI) DB;</p>
-<p>4.5. Artificial Intelligence (AI) Software DB.</p>
-<p>4.6. In the detailed analysis and design phase, it must be decided how many independent (separate) database management systems (DBMS) must be installed in order to implement the above databases, while ensuring the performance and security of the DBMS and the DBs managed by it. The DBMS of the internal portal and &ldquo;Saulė&rdquo; Portal must be separate.</p>
-<p>4.7. The Contracting Authority will provide the necessary DBMS licenses (DBMS services) provided by the State Cloud Service Provider (hereinafter - SCSPS) (it is preliminary expected that SCSPS will provide the following DBMS services: Microsoft SQL Server, Oracle Database Server, PostgreSQL, MySQL / MariaDB, SAP HANA). The Installer must submit DBMS licenses if the DBMS licenses provided by SCSPS are not suitable for its proposed SAULĖ IS installation solution.</p>
-<p>4.8. AI and BI DBs must be installed and links must be made to the Artificial Intelligence (AI) and Analytics (BI) software components (links No 21 and 22 shown on the diagram).</p>
-<p>4.9. Links must be made to the write / read component of the large data platform (link No 26 shown on the diagram) to ensure the possibility of data exchange between relational DBs and large data platforms for the purposes defined in the analysis and design phase.</p>
-<p>4.10. The links between the SAULĖ IS relational DBMS and the API and / or DB type data exchange module component implemented in the Integration Platform (link No&nbsp; 33 shown on the diagram) must be implemented to provide / receive data from / to SAULĖ IS DB.</p>
+<p>4.1.1. DB of &ldquo;Saulė&rdquo; Portal;</p>
+<p>4.1.2. Internal portal DB;</p>
+<p>4.1.3. Analytics Tool (BI) DB;</p>
+<p>4.1.4. Artificial Intelligence (AI) Software DB.</p>
+<p>4.2. In the detailed analysis and design phase, it must be decided how many independent (separate) database management systems (DBMS) must be installed in order to implement the above databases, while ensuring the performance and security of the DBMS and the DBs managed by it. The DBMS of the internal portal and &ldquo;Saulė&rdquo; Portal must be separate.</p>
+<p>4.3. The Contracting Authority will provide the necessary DBMS licenses (DBMS services) provided by the State Cloud Service Provider (hereinafter - SCSPS) (it is preliminary expected that SCSPS will provide the following DBMS services: Microsoft SQL Server, Oracle Database Server, PostgreSQL, MySQL / MariaDB, SAP HANA). The Installer must submit DBMS licenses if the DBMS licenses provided by SCSPS are not suitable for its proposed SAULĖ IS installation solution.</p>
+<p>4.4. AI and BI DBs must be installed and links must be made to the Artificial Intelligence (AI) and Analytics (BI) software components (links No 21 and 22 shown on the diagram).</p>
+<p>4.5. Links must be made to the write / read component of the large data platform (link No 26 shown on the diagram) to ensure the possibility of data exchange between relational DBs and large data platforms for the purposes defined in the analysis and design phase.</p>
+<p>4.6. The links between the SAULĖ IS relational DBMS and the API and / or DB type data exchange module component implemented in the Integration Platform (link No&nbsp; 33 shown on the diagram) must be implemented to provide / receive data from / to SAULĖ IS DB.</p>
 </td>
 </tr>
 <tr>
@@ -225,21 +226,21 @@ Table 7.2. Description of architecture components
 <p>5.6.1. Link No 24 &ndash; link of data recording / reading software component to LDFS for storage and / or retrieval of data received from various sources.</p>
 <p>5.6.2. Link No 25 &ndash; link of data recording / reading software component to NoSQL type database for storage and / or reading of data received from various sources.</p>
 <p>5.6.3. Link No 26 &ndash; link of data recording / reading software component with SAULĖ IS relational databases (Saulė portal DB, internal portal DB, AI DB, BI DB), which must be implemented if a meaningful use of such data flow is identified in the detailed analysis and design phase.</p>
-<p>5.7. A specialized data analysis software must be installed to perform the analysis and statistical calculations of the various data stored in the LDFS and NoSQL data type databases. The most appropriate analysis software must be selected according to the data analysis tasks identified and defined in the analysis and design phase.</p>
+<p>5.7. Specialized data analysis software must be installed to perform the analysis and statistical calculations of the various data stored in the LDFS and NoSQL data type databases. The most appropriate analysis software must be selected according to the data analysis tasks identified and defined in the analysis and design phase.</p>
 <p>5.8. The following links must be implemented:</p>
 <p>5.8.1. Link No 27 - the link of the analysis software component to the NoSQL type database for data analysis and storage.</p>
 <p>5.8.2. Link No 28 - the link of the analysis software component to the LDFS for data analysis and storage. The link must be created during the Installation Agreement.</p>
-<p>5.8.3. The PPO data analyst must be able to connect to the analysis software through the user interface.</p>
-<p>5.9. A data indexing (search) software must be installed, which would enable the components of the Portal Saulė IS or the Internal Portal to save (index) documents and perform document search and download via integrated interfaces. The indexing software must provide an indexing service for incoming data and ensure a fast full-text search of documents.</p>
-<p>5.10. The following links must be implemented:</p>
-<p>5.10.1. Link No 29 - the link of data indexing (search) software component to NoSQL type database, if documents and / or document contents will be stored in NoSQL or equivalent DB.</p>
-<p>5.10.2. Link No 30 - the link of data indexing (search) software component with LDFS if documents and / or document contents will be stored in LDFS.</p>
-<p>5.11. Links between data writing / reading software and API and DB type data exchange module components implemented in the Integration Platform must be implemented in the large data platform (link No 32 shown on the diagram), if the data flow from the Integration Platform to the Large Data Platform is identified and defined in the detailed analysis and design phase and vice versa - from Large Data Platform to Integration Platform (for data provision).</p>
-<p>5.12. For the monitoring and management of large data platforms, a management and monitoring software must be installed, enabling centralised monitoring and management of key components of large data.</p>
-<p>5.13. Software must be installed to ensure the security of the large data platform:</p>
-<p>5.14. user administration (including role management) and identification (unified link to large data platform components) component;</p>
-<p>5.15. security parameter administration component;</p>
-<p>5.16. a centralised component for recording and management of audit records of large data platform components.</p>
+<p>41.9. The PPO data analyst must be able to connect to the analysis software through the user interface.</p>
+<p>41.10. A data indexing (search) software must be installed, which would enable the components of the Portal Saulė IS or the Internal Portal to save (index) documents and perform document search and download via integrated interfaces. The indexing software must provide an indexing service for incoming data and ensure a fast full-text search of documents.</p>
+<p>41.11. The following links must be implemented:</p>
+<p>41.11.1. Link No 29 - the link of data indexing (search) software component to NoSQL type database, if documents and / or document contents will be stored in NoSQL or equivalent DB.</p>
+<p>41.11.2. Link No 30 - the link of data indexing (search) software component with LDFS if documents and / or document contents will be stored in LDFS.</p>
+<p>41.12. Links between data writing / reading software and API and DB type data exchange module components implemented in the Integration Platform must be implemented in the large data platform (link No 32 shown on the diagram), if the data flow from the Integration Platform to the Large Data Platform is identified and defined in the detailed analysis and design phase and vice versa - from Large Data Platform to Integration Platform (for data provision).</p>
+<p>5.9. 41.13. For the monitoring and management of large data platforms, a management and monitoring software must be installed, enabling centralised monitoring and management of key components of large data.</p>
+<p>5.10. 41.14. Software must be installed to ensure the security of the large data platform:</p>
+<p>5.11. 41.14.1. user administration (including role management) and identification (unified link to large data platform components) component;</p>
+<p>5.12. 41.14.2. security parameter administration component;</p>
+<p>5.13. 41.14.3. a centralised component for recording and management of audit records of large data platform components.</p>
 </td>
 </tr>
 <tr>
@@ -283,7 +284,7 @@ Table 7.2. Description of architecture components
 <p>10. CMS</p>
 </td>
 <td width="66%">
-<p>10.1. Content Management System Software, designed for the content management of the external portal &ldquo;Saulė&rdquo; and for the implementation of the functions of the public information subsystem (see Section 7.6.12 Requirements&nbsp; for Published Information Subsystem), must be created or made available for use by.</p>
+<p>10.1. Content Management System Software, designed for the content management of the external portal &ldquo;Saulė&rdquo; and for the implementation of the functions of the public information subsystem (see Section 7.6.12 Requirements for Published Information Subsystem), must be created or made available for use by.</p>
 </td>
 </tr>
 <tr>
@@ -292,11 +293,11 @@ Table 7.2. Description of architecture components
 </td>
 <td width="66%">
 <p>11.1. The Document Management Subsystem must be developed and installed. The subsystem is designed for users of organisations and internal portal for preparation, signing (with the help of e-documents component), storage and archiving of documents. The subsystem must be able to perform the following actions:</p>
-<p>11.2. Create a document according to a template or create a new document;</p>
-<p>11.3. Assign a registration number, manage, save in the required formats, coordinate, sign, if necessary, export the document, send to SAULĖ IS users;</p>
-<p>11.4. Create tasks;</p>
-<p>11.5. Keep the document for a set period of time;</p>
-<p>11.6. Archive SAULĖ IS documents.</p>
+<p>11.1.1. Create a document according to a template or create a new document;</p>
+<p>11.1.2. Assign a registration number, manage, save in the required formats, coordinate, sign, if necessary, export the document, send to SAULĖ IS users;</p>
+<p>11.1.3. Create tasks;</p>
+<p>11.1.4. Keep the document for a set period of time;</p>
+<p>11.1.5. Archive SAULĖ IS documents.</p>
 </td>
 </tr>
 <tr>
@@ -320,7 +321,7 @@ Table 7.2. Description of architecture components
 <p>14. Centralised auditing software</p>
 </td>
 <td width="66%">
-<p>14.1. A centralised audit software (Balabit) available at the PPO must be used. A link of the relational DBMS, SAULĖ IS applications and integration platform to the centralised audit software must be established (link No 36 and 37 are shown on the diagram, respectively), which would ensure centralised auditing of the operation and use of SAULĖ IS applications.</p>
+<p>14.1. Centralised audit software (Balabit) available at the PPO must be used. A link of the relational DBMS, SAULĖ IS applications and integration platform to the centralised audit software must be established (link No 36 and 37 are shown on the diagram, respectively), which would ensure centralised auditing of the operation and use of SAULĖ IS applications.</p>
 </td>
 </tr>
 <tr>
@@ -338,7 +339,8 @@ Table 7.2. Description of architecture components
 
 52. Below one can find the functional diagram of “Saulė” portal. In the detailed analysis and design phase, the components demonstrated on the diagram can be decomposed by splitting them into other separate physical and logical components, ensuring that all functional and non-functional requirements for the component are met.
 
-![image](https://user-images.githubusercontent.com/61745726/92297311-b7e1d000-ef46-11ea-8212-e444c2e8bc80.png)
+![image](https://user-images.githubusercontent.com/61745726/102211222-fc80ee00-3edb-11eb-88b4-a6a9cdc31f8a.png)
+
 
 Fig. 7.3. Functional diagram of “Saulė” portal
 
@@ -384,9 +386,9 @@ Table 7.3. Description of “Saulė” portal functional components
 </td>
 <td width="66%">
 <p>3.1. A helpdesk subsystem must be designed and implemented. The subsystem must provide the functionality for:</p>
-<p>3.2. View of FAQs and tutorial movies;</p>
-<p>3.3. Live (online (live chat)) correspondence with a PPO specialist;</p>
-<p>3.4. Registration and submission of requests / problems to the PPO.</p>
+<p>3.1.1. View of FAQs and tutorial movies;</p>
+<p>3.1.2. Live (online (live chat)) correspondence with a PPO specialist;</p>
+<p>3.1.3. Registration and submission of requests / problems to the PPO.</p>
 </td>
 </tr>
 <tr>
@@ -396,11 +398,11 @@ Table 7.3. Description of “Saulė” portal functional components
 <td width="66%">
 <p>4.1. A communication subsystem must be developed and implemented. In the communication subsystem of procurement participants, the options to reach all users registered in SAULĖ IS must be implemented.</p>
 <p>4.2. The following processes must be implemented in the communication subsystem of the procurement participants:</p>
-<p>4.3. Sending a message (mass, standard) to registered System users;</p>
-<p>4.4. Sending a reply to a received message;</p>
-<p>4.5. Communication of Procurement Executors (PE) during claim processing;</p>
-<p>4.6. Sending a system message to the users registered in the System.</p>
-<p>4.7. A link must be established between the communication subsystem and the components in the field of procurement executors and suppliers (link No 12 and 13 are shown on the diagram).</p>
+<p>4.2.1. Sending a message (mass, standard) to registered System users;</p>
+<p>4.2.2. Sending a reply to a received message;</p>
+<p>4.2.3. Communication of Procurement Executors (PE) during claim processing;</p>
+<p>4.2.4. Sending a system message to the users registered in the System.</p>
+<p>4.3. A link must be established between the communication subsystem and the components in the field of procurement executors and suppliers (link No 12 and 13 are shown on the diagram).</p>
 </td>
 </tr>
 <tr>
@@ -411,14 +413,14 @@ Table 7.3. Description of “Saulė” portal functional components
 <p>5.1. An organisation domain and user administration subsystem must be developed and implemented. The subsystem is intended for all organisations of &ldquo;Saulė&rdquo; portal (Procurement Executors and Suppliers) to administer the data of their organisation.</p>
 <p>5.2. The purpose of the subsystem is to register organisations, users and manage their roles and rights, manage data and templates in the organisation domain. This part of the system is only available to registered users.</p>
 <p>5.3. Functionality must be created in the organisation domain and user administration subsystem for the implementation of the following processes:</p>
-<p>5.4. Registration of organisations;</p>
-<p>5.5. User authentication;</p>
-<p>5.6. Management of organisation users;</p>
-<p>5.7. Management of the transfer of functions of the administrator of the organisation;</p>
-<p>5.8. Authorization of Contracting Authorities, Suppliers in the action system (assignment of rights);</p>
-<p>5.9. Deactivation of organisations and users;</p>
-<p>5.10. Management of parameters and templates in an organisation domain.</p>
-<p>5.11. A link must be established between the organisation domain and the components of the user administration subsystem and the procurement executors and suppliers domain (links No 11 and 14 shown on the diagram).</p>
+<p>5.3.1. Registration of organisations;</p>
+<p>5.3.2. User authentication;</p>
+<p>5.3.3. Management of organisation users;</p>
+<p>5.3.4. Management of the transfer of functions of the administrator of the organisation;</p>
+<p>5.3.5. Authorization of Contracting Authorities, Suppliers in the action system (assignment of rights);</p>
+<p>5.3.6. Deactivation of organisations and users;</p>
+<p>5.3.7. Management of parameters and templates in an organisation domain.</p>
+<p>5.4. A link must be established between the organisation domain and the components of the user administration subsystem and the procurement executors and suppliers domain (links No 11 and 14 shown on the diagram).</p>
 </td>
 </tr>
 <tr>
@@ -428,11 +430,11 @@ Table 7.3. Description of “Saulė” portal functional components
 <td width="66%">
 <p>6.1. The subsystem of contracts must be designed and implemented. The subsystem must implement the functionality for the management of procurement contracts from the moment of concluding the contract to the end of the contract.</p>
 <p>6.2. The following processes must be implemented with the help of the subsystem:</p>
-<p>6.3. Conclusion, signing, entry into force, execution, and termination of the contract (together with the actual amount of the contract);</p>
-<p>6.4. Contract amendment;</p>
-<p>6.5. Termination of the contract or its amendment;</p>
-<p>6.6. Inclusion of suppliers in lists of unreliable suppliers and / or list of suppliers who provided false information;</p>
-<p>6.7. A link must be established between the contract subsystem and the components and suppliers in the area of procurement executors (links No 9 and 10 on the diagram).</p>
+<p>6.2.1. Conclusion, signing, entry into force, execution, and termination of the contract (together with the actual amount of the contract);</p>
+<p>6.2.2. Contract amendment;</p>
+<p>6.2.3. Termination of the contract or its amendment;</p>
+<p>6.2.4. Inclusion of suppliers in lists of unreliable suppliers and / or list of suppliers who provided false information;</p>
+<p>6.3. A link must be established between the contract subsystem and the components and suppliers in the area of procurement executors (links No 9 and 10 on the diagram).</p>
 </td>
 </tr>
 <tr>
@@ -443,11 +445,11 @@ Table 7.3. Description of “Saulė” portal functional components
 <p>7.1. A subsystem of preliminary contracts must be developed and implemented. The subsystem must implement the functionality for the execution of procurements under preliminary contracts, placing orders with suppliers and concluding main contracts.</p>
 <p>7.2. The functions of the subsystem must ensure the electronic management of the preliminary contracts and the main contracts concluded on the basis thereof and the organisation of a renewed competition for the Procurement Executor. The preparation of draft main contracts must also be created according to the templates created by SAULĖ IS.</p>
 <p>7.3. The following processes must be implemented with the help of the subsystem:</p>
-<p>7.4. Procurement under a preliminary contract from one supplier;</p>
-<p>7.5. Procurement under a preliminary contract from several suppliers without renewed competition;</p>
-<p>7.6. Procurement under a renewed tender procedure under a preliminary contract;</p>
-<p>7.7. Inclusion of suppliers in lists of unreliable suppliers and / or list of suppliers who provided false information;</p>
-<p>7.8. Conclusion, signing and publication of the contract.</p>
+<p>7.3.1. Procurement under a preliminary contract from one supplier;</p>
+<p>7.3.2. Procurement under a preliminary contract from several suppliers without renewed competition;</p>
+<p>7.3.3. Procurement under a renewed tender procedure under a preliminary contract;</p>
+<p>7.3.4. Inclusion of suppliers in lists of unreliable suppliers and / or list of suppliers who provided false information;</p>
+<p>7.3.5. Conclusion, signing and publication of the contract.</p>
 </td>
 </tr>
 <tr>
@@ -456,12 +458,12 @@ Table 7.3. Description of “Saulė” portal functional components
 </td>
 <td width="66%">
 <p>8.1. A subsystem of e-Auctions must be developed and implemented to organise and execute e-Auctions. The subsystem must implement functionality for:</p>
-<p>8.2. E-Auction organisation;</p>
-<p>8.3. E-Auction notice;</p>
-<p>8.4. E-Auction management;</p>
-<p>8.5. Execution of the E-Auction through the e-Auctions application;</p>
-<p>8.6. Queuing;</p>
-<p>8.7. Determination of a successful tenderer.</p>
+<p>8.1.1. E-Auction organisation;</p>
+<p>8.1.2. E-Auction notice;</p>
+<p>8.1.3. E-Auction management;</p>
+<p>8.1.4. Execution of the E-Auction through the e-Auctions application;</p>
+<p>8.1.5. Queuing;</p>
+<p>8.2. Determination of a successful tenderer.</p>
 </td>
 </tr>
 <tr>
@@ -470,12 +472,12 @@ Table 7.3. Description of “Saulė” portal functional components
 </td>
 <td width="66%">
 <p>9.1. The Procurement Planning Subsystem must be developed and implemented. The subsystem must implement the functionality for the implementation of the following processes:</p>
-<p>9.2. Procurement planning data management and storage, i.e. the needs of initiators are registered and accumulated;</p>
-<p>9.3. Calculation of values and provision of recommendations to the PE on the choice of procurement method;</p>
-<p>9.4. Systematisation of information and data;</p>
-<p>9.5. Drawing and approval of procurement plans based on the systematised information and data;</p>
-<p>9.6. Formation of summary tables for publication based on the data of the approved procurement plans;</p>
-<p>9.7. Ensuring of control of the execution of procurement plans and automatic movement of data to other SAULĖ IS subsystems.</p>
+<p>9.1.1. Procurement planning data management and storage, i.e. the needs of initiators are registered and accumulated;</p>
+<p>9.1.2. Calculation of values and provision of recommendations to the PE on the choice of procurement method;</p>
+<p>9.1.3. Systematisation of information and data;</p>
+<p>9.1.4. Drawing and approval of procurement plans based on the systematised information and data;</p>
+<p>9.1.5. Formation of summary tables for publication based on the data of the approved procurement plans;</p>
+<p>9.1.6. Ensuring of control of the execution of procurement plans and automatic movement of data to other SAULĖ IS subsystems.</p>
 </td>
 </tr>
 <tr>
@@ -491,10 +493,10 @@ Table 7.3. Description of “Saulė” portal functional components
 <p>11. Procurement notice subsystem</p>
 </td>
 <td width="66%">
-<p>11.1. 63.1. A procurement notice subsystem must be created and implemented. The subsystem must implement functionality for:</p>
-<p>11.2. 63.1.1. Procurement notice according to different types of procurement;</p>
-<p>11.3. 63.1.2. Creation of a procurement notice.</p>
-<p>11.4. 63.2. A link must be established between the procurement notice subsystem and the planning and tender assessment subsystems (links No 4 and 5 shown on the diagram).</p>
+<p>11.1. A procurement notice subsystem must be created and implemented. The subsystem must implement functionality for:</p>
+<p>11.2. &nbsp;Procurement notice according to different types of procurement;</p>
+<p>11.3. Creation of a procurement notice.</p>
+<p>11.4. A link must be established between the procurement notice subsystem and the planning and tender assessment subsystems (links No 4 and 5 shown on the diagram).</p>
 </td>
 </tr>
 <tr>
@@ -544,7 +546,8 @@ Table 7.3. Description of “Saulė” portal functional components
 
 67. Below one can find the functional diagram of SAULĖ IS internal portal. In the detailed analysis and design phase, the components demonstrated on the diagram can be decomposed by splitting them into other separate physical and logical components, ensuring that all functional and non-functional requirements for the component are met.
 
-![image](https://user-images.githubusercontent.com/61745726/92297327-e069ca00-ef46-11ea-8c90-6c46dae835a5.png)
+![image](https://user-images.githubusercontent.com/61745726/102211349-2508e800-3edc-11eb-808b-5f4dc89fce8e.png)
+
 
 Fig. 7.4. Functional diagram of the internal portal
 Table 7.4. Description of functional components of the internal portal 
@@ -567,15 +570,15 @@ Table 7.4. Description of functional components of the internal portal
 </td>
 <td width="66%">
 <p>1.1. The control and offence subsystem must be designed and implemented. The subsystem is intended to assess the implementation of procurement control and offence prevention from receipt to dispatch of the assessment report. The following processes must be implemented with the help of the subsystem:</p>
-<p>1.2. Review of the list of contracts to be assessed, assessed, evaluated, contracts and organisations to be verified and verified;</p>
-<p>1.3. Creation of a procurement, contract or Procurement Executor assessment task and allocation of resources;</p>
-<p>1.4. Preparation and approval of the procurement, contract or the Procurement Executor assessment report;</p>
-<p>1.5. Submission of an Inquiry to the Procurement Executor or other organisation and receipt of a response;</p>
-<p>1.6. Approval of the procurement, contract, the Procurement Executor assessment report, the Inquiry or the requests of the Procurement Controller;</p>
-<p>1.7. Stop procedures;</p>
-<p>1.7.1. Form a task for another Procurement Controller;</p>
-<p>1.7.2. Submission of an assessment report and control of the implementation of obligations or recommendations;</p>
-<p>1.7.3. Receipt of a request for confirmation of consent to perform the procurement and approval or rejection of consent.</p>
+<p>1.1.1. Review of the list of contracts to be assessed, assessed, evaluated, contracts and organisations to be verified and verified;</p>
+<p>1.1.2. Creation of a procurement, contract or Procurement Executor assessment task and allocation of resources;</p>
+<p>1.1.3. Preparation and approval of the procurement, contract or the Procurement Executor assessment report;</p>
+<p>1.1.4. Submission of an Inquiry to the Procurement Executor or other organisation and receipt of a response;</p>
+<p>1.1.5. Approval of the procurement, contract, the Procurement Executor assessment report, the Inquiry or the requests of the Procurement Controller;</p>
+<p>1.1.6. Stop procedures;</p>
+<p>1.1.7. Form a task for another Procurement Controller;</p>
+<p>1.1.8. Submission of an assessment report and control of the implementation of obligations or recommendations;</p>
+<p>1.1.9. Receipt of a request for confirmation of consent to perform the procurement and approval or rejection of consent.</p>
 </td>
 </tr>
 <tr>
@@ -584,12 +587,12 @@ Table 7.4. Description of functional components of the internal portal
 </td>
 <td width="66%">
 <p>2.1. The verification subsystem must be developed and implemented. The subsystem is intended for:</p>
-<p>2.2. Institutions responsible for the selection and supervision of the implementation of projects financed by the European Union (hereinafter referred to as the EU), other international financial support or state funds (hereinafter referred to as the Implementing Agencies);</p>
-<p>2.3. Institutions which function is to supervise procurements financed from the state budget (for example, the State Audit Office and Audit Service, the Competition Authority, STT, etc.) (hereinafter referred to as the Supervisory Agencies).</p>
-<p>2.4. The subsystem must have functionality to implement the following processes:</p>
-<p>2.5. Preliminary verification of the procurement package by the Implementing Agencies;</p>
-<p>2.6. Ex-post verification of the procurement by the Implementing Agencies;</p>
-<p>2.7. Search and analysis of procurements, procurement data of the supervisory agencies, data of suppliers / procurement executors.</p>
+<p>2.1.1. Institutions responsible for the selection and supervision of the implementation of projects financed by the European Union (hereinafter referred to as the EU), other international financial support or state funds (hereinafter referred to as the Implementing Agencies);</p>
+<p>2.1.2. Institutions which function is to supervise procurements financed from the state budget (for example, the State Audit Office and Audit Service, the Competition Authority, STT, etc.) (hereinafter referred to as the Supervisory Agencies).</p>
+<p>2.2. The subsystem must have functionality to implement the following processes:</p>
+<p>2.2.1. Preliminary verification of the procurement package by the Implementing Agencies;</p>
+<p>2.2.2. Ex-post verification of the procurement by the Implementing Agencies;</p>
+<p>2.2.3. Search and analysis of procurements, procurement data of the supervisory agencies, data of suppliers / procurement executors.</p>
 </td>
 </tr>
 <tr>
@@ -600,10 +603,10 @@ Table 7.4. Description of functional components of the internal portal
 <p>3.1. The Risk Management Subsystem must be designed and implemented for:</p>
 <p>3.1.1. PPO specialists performing the functions of risk assessment and management of procurement, contracts and Procurement Executors.</p>
 <p>3.2. Risk management processes:</p>
-<p>3.3. Listing of risky procurements, contracts or Procurement Executors;</p>
-<p>3.4. Compilation of &ldquo;White&rdquo; and &ldquo;Black&rdquo; lists;</p>
-<p>3.5. Managements of risks related to procurement, contracts or Procurement Executors;</p>
-<p>3.6. Management of risk assessment and risk management model.</p>
+<p>3.2.1. Listing of risky procurements, contracts or Procurement Executors;</p>
+<p>3.2.2. Compilation of &ldquo;White&rdquo; and &ldquo;Black&rdquo; lists;</p>
+<p>3.2.3. Managements of risks related to procurement, contracts or Procurement Executors;</p>
+<p>3.2.4. Management of risk assessment and risk management model.</p>
 </td>
 </tr>
 <tr>
@@ -612,15 +615,15 @@ Table 7.4. Description of functional components of the internal portal
 </td>
 <td width="66%">
 <p>4.1. The Administration and Configuration Subsystem must be created and implemented. The subsystem must implement the following functionality, which includes:</p>
-<p>4.2. Administration of templates and forms - creation of templates and e-forms is done with the help of software;</p>
-<p>4.3. Management document registers;</p>
-<p>4.4. An audit module for viewing, filtering and exporting of audit records;</p>
-<p>4.5. User management. Functionality for creation, management and assignment of roles to users of the internal portal must be created, providing the option for Implementing Agencies to create the necessary users and grant rights in SAULĖ IS system.</p>
-<p>4.6. Functionality must also be developed for:</p>
-<p>4.7. Registration of the implementing or supervisory agencies;</p>
-<p>4.8. Project information management of the Implementing Agencies;</p>
-<p>4.9. The establishment of users of Implementing Agencies using SFMIS or NORIS and users of Supervisory Agencies;</p>
-<p>4.10. The process of creation of users for implementing agencies that do not use SFMIS or NORIS.</p>
+<p>4.1.1. Administration of templates and forms - creation of templates and e-forms is done with the help of software;</p>
+<p>4.1.2. Management document registers;</p>
+<p>4.1.3. An audit module for viewing, filtering and exporting of audit records;</p>
+<p>4.1.4. User management. Functionality for creation, management and assignment of roles to users of the internal portal must be created, providing the option for Implementing Agencies to create the necessary users and grant rights in SAULĖ IS system.</p>
+<p>4.2. Functionality must also be developed for:</p>
+<p>4.2.1. Registration of the implementing or supervisory agencies;</p>
+<p>4.2.2. Project information management of the Implementing Agencies;</p>
+<p>4.2.3. The establishment of users of Implementing Agencies using SFMIS or NORIS and users of Supervisory Agencies;</p>
+<p>4.2.4. The process of creation of users for implementing agencies that do not use SFMIS or NORIS.</p>
 </td>
 </tr>
 </tbody>
@@ -628,49 +631,7 @@ Table 7.4. Description of functional components of the internal portal
 
 #### 7.5	GENERAL REQUIREMENTS
 
-<ol>
-<li>SAULĖ IS data entry forms shall be designed in such a way that the data entry would be as structured as possible.
-<ul>
-<li>Data entry forms shall be filled in as automatically as possible with data stored in SAULĖ IS or other IS and registers accessible through integration interfaces.</li>
-</ul>
-</li>
-<li>The following shall be available in SAULĖ IS lists:
-<ul>
-<li></li>
-<li>Functionality for marking of many records to perform certain actions (for example, export, delete the selected records). At the detailed analysis or design phase, it must be agreed which lists must allow the marking of many records.</li>
-<li>It must be possible to print and export the list of objects to * .pdf, * .xlsx, or equivalent files. During the detailed analysis it must be agreed which lists should be the subject to this functionality.</li>
-<li>It must be possible to filter the list of objects and sort it according to the attributes belonging to that list. Exceptions may be made in agreement with the Contracting Authority.</li>
-<li>The lists must display the number of records in the list. After filtering the list, the number of records found must be displayed.</li>
-</ul>
-</li>
-<li>All search / filtering functions, unless otherwise agreed by the Installer during the detailed analysis and design phase, shall be implemented in accordance with these rules:
-<ul>
-<li>In text search fields, the search must be realized by a fragment of a word or combination of numbers and a complete word;</li>
-<li>The search must be performed according to Lithuanian letters and using Latin equivalents of letters instead of Lithuanian letters (for example, treating the letters &ldquo;&scaron;&rdquo; and &ldquo;s&rdquo; as one);</li>
-<li>The search must be case-insensitive;</li>
-<li>The search must be performed only on those components and data sets to which the external user of the EPP has the access rights;</li>
-<li>Search results must be presented in the form of a list;</li>
-<li>The number of search results should be displayed after the search.</li>
-</ul>
-</li>
-<li>The validation of the data entered in the data entry forms shall be performed in accordance with the validation rules established for the forms during the detailed analysis and design phase:
-<ul>
-<li>Mandatory input data must be validated;</li>
-<li>The format of the data (date, number, text or other established rules) must be validated;</li>
-<li>Attached file extensions and file size must be validated;</li>
-<li>A logical validation must be performed between the form elements - the selection (input) of one form element must be able to enable / disable other form elements, etc.</li>
-</ul>
-</li>
-<li>For all functions described in this technical specification intended for creation of data or documents, the functions of editing and deleting or cancelling those data or documents shall be implemented, which shall be compatible with the logic of the activity.</li>
-<li>Coordinated SAULĖ IS locations must allow the user with such a right to mark information or part of the text in a document or e-form data fields that are confidential (the text of confidential information must be visible to the presence of the text, but become invisible and illegible). The Installer, together with the Contracting Authority, must identify the objects in which it must be possible to mark confidential information by means of marking (document and / or e-data form).</li>
-<li>Coordinated SAULĖ IS locations must use a content text editor that operates on the WYSIWYG principle (What You See Is What You Get, or "what you see matches what you get") or equivalent principle, i.e. must be able to create, format and edit tables, have basic text editing and formatting functions (alignment, paragraphs, numbering, colour, etc.), image loading functions into text.</li>
-<li>The list of file formats that can be uploaded to SAULĖ IS must be agreed during the detailed analysis and design phase.</li>
-<li>SAULĖ IS shall have the history of change of all created entities, which can be edited by SAULĖ IS users, by coordinating with the Contracting Authority the attributes of the entity to be protected and submitted for review. The Installer together with the Contracting Authority must identify and agree on the location of the display of the latter historical (audited) data.</li>
-<li>All templates, template documents, classifiers created by SAULĖ IS must have visibility for users &ldquo;from&rdquo;, &ldquo;until&rdquo; deadlines determining when the template / classifier is presented to the user for selection, and validity &ldquo;from&rdquo;, &ldquo;until&rdquo; deadlines that determine when the selected the template / classifier can be used in the process (for example, a published procurement).</li>
-<li>After the change of templates, template documents, classifiers in SAULĖ IS, a new version of the template, template document, classifier must be created in all cases.</li>
-<li>The subsystem of Procurement Procedures and Communication shall be able to provide automatic translation into English. The Service Provider must create or submit the software required for the implementation of the solution (for example, https://www.tilde.lt/kalbines-technologijos/masininis-vertimas) in accordance with the requirements specified in 5 software licences. The need for functionality must be considered and the final implemented solution must be agreed with the Contracting Authority during analysis and design phase.</li>
-<li>In all cases where time limits apply, the responsible person shall be automatically informed by notice of the impending expiry of the time limit and of the expiry of the time limit. Each system user must be able to determine which messages they want to receive and the channels they would like to receive messages (e-mail, SAULĖ IS message box).</li>
-</ol>
+<p>72. SAULĖ IS data entry forms shall be designed in such a way that the data entry would be as structured as possible. <br />72.1. Data entry forms shall be filled in as automatically as possible with data stored in SAULĖ IS or other IS and registers accessible through integration interfaces.<br />73. The following shall be available in SAULĖ IS lists:<br />73.1. Pagination.<br />73.2. Functionality for marking of many records to perform certain actions (for example, export, delete the selected records). At the detailed analysis or design phase, it must be agreed which lists must allow the marking of many records.<br />73.3. It must be possible to print and export the list of objects to * .pdf, * .xlsx, or equivalent files. During the detailed analysis it must be agreed which lists should be the subject to this functionality.<br />73.4. It must be possible to filter the list of objects and sort it according to the attributes belonging to that list. Exceptions may be made in agreement with the Contracting Authority.<br />73.5. The lists must display the number of records in the list. After filtering the list, the number of records found must be displayed.<br />74. All search / filtering functions, unless otherwise agreed by the Installer during the detailed analysis and design phase, shall be implemented in accordance with these rules:<br />74.1. In text search fields, the search must be realized by a fragment of a word or combination of numbers and a complete word;<br />74.2. The search must be performed according to Lithuanian letters and using Latin equivalents of letters instead of Lithuanian letters (for example, treating the letters &ldquo;&scaron;&rdquo; and &ldquo;s&rdquo; as one);<br />74.3. The search must be case-insensitive;<br />74.4. The search must be performed only on those components and data sets to which the external user of the EPP has the access rights;<br />74.5. Search results must be presented in the form of a list;<br />74.6. The number of search results should be displayed after the search.<br />75. The validation of the data entered in the data entry forms shall be performed in accordance with the validation rules established for the forms during the detailed analysis and design phase:<br />75.1. Mandatory input data must be validated;<br />75.2. The format of the data (date, number, text or other established rules) must be validated;<br />75.3. Attached file extensions and file size must be validated;<br />75.4. A logical validation must be performed between the form elements - the selection (input) of one form element must be able to enable / disable other form elements, etc.<br />76. For all functions described in this technical specification intended for creation of data or documents, the functions of editing and deleting or cancelling those data or documents shall be implemented, which shall be compatible with the logic of the activity.<br />77. Coordinated SAULĖ IS locations must allow the user with such a right to mark information or part of the text in a document or e-form data fields that are confidential (the text of confidential information must be visible to the presence of the text, but become invisible and illegible). The Installer, together with the Contracting Authority, must identify the objects in which it must be possible to mark confidential information by means of marking (document and / or e-data form). <br />78. Coordinated SAULĖ IS locations must use a content text editor that operates on the WYSIWYG principle (What You See Is What You Get, or "what you see matches what you get") or equivalent principle, i.e. must be able to create, format and edit tables, have basic text editing and formatting functions (alignment, paragraphs, numbering, colour, etc.), image loading functions into text.<br />79. The list of file formats that can be uploaded to SAULĖ IS must be agreed during the detailed analysis and design phase.<br />80. SAULĖ IS shall have the history of change of all created entities, which can be edited by SAULĖ IS users, by coordinating with the Contracting Authority the attributes of the entity to be protected and submitted for review. The Installer together with the Contracting Authority must identify and agree on the location of the display of the latter historical (audited) data.<br />81. All templates, template documents, classifiers created by SAULĖ IS must have visibility for users &ldquo;from&rdquo;, &ldquo;until&rdquo; deadlines determining when the template / classifier is presented to the user for selection, and validity &ldquo;from&rdquo;, &ldquo;until&rdquo; deadlines that determine when the selected the template / classifier can be used in the process (for example, a published procurement).<br />82. After the change of templates, template documents, classifiers in SAULĖ IS, a new version of the template, template document, classifier must be created in all cases.<br />83. The subsystem of Procurement Procedures and Communication shall be able to provide automatic translation into English. The Service Provider must create or submit the software required for the implementation of the solution (for example, https://www.tilde.lt/kalbines-technologijos/masininis-vertimas) in accordance with the requirements specified in 8.5 software licences. The need for functionality must be considered and the final implemented solution must be agreed with the Contracting Authority during analysis and design phase. <br />84. In all cases where time limits apply, the responsible person shall be automatically informed by notice of the impending expiry of the time limit and of the expiry of the time limit. Each system user must be able to determine which messages they want to receive and the channels they would like to receive messages (e-mail, SAULĖ IS message box).</p>
 
 #### 7.6	REQUIREMENTS FOR “SAULĖ” PORTAL
 
