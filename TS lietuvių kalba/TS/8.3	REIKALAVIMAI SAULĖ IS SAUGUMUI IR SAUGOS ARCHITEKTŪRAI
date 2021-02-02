@@ -92,16 +92,15 @@
 2467. Diegėjas turi atlikti reikiamus SAULĖ IS programavimo ir / ar konfigūravimo darbus, atsižvelgiant į VPT atstovų atliktų atsparumo įsilaužimams testavimų rezultatus, kad prieš pradedant eksploatuoti SAULĖ IS būti pašalinti visi nustatyti svarbūs saugumo pažeidžiamumai.
 
 #### 8.3.6	Kiti saugos reikalavimai
-2468. Saugumo pataisų ir atnaujinimų valdymas:
-2468.1. SAULĖ IS Diegėjas privalo teikti saugumo pataisas ir atnaujinimus viso sistemos gyvavimo ciklo metu;
-2468.2. Prieš teikiant VPT saugumo pataisas/atnaujinimus jie privalo būti ištestuoti Diegėjo testinėje aplinkoje;
-2468.3. SAULĖ IS Diegėjas privalo užtikrinti sistemos platformos (OS, DBMS, middleware) saugumo pataisų/atnaujinimų palaikymą viso sistemos gyvavimo ciklo metu. Diegėjas privalo ištestuoti ir patvirtinti platformos pataisų/atnaujinimų suderinamumą su SAULĖ IS (arba pasiūlyti alternatyvą – angl. workaround) ne vėliau kaip per 30 dienų po platformos pataisų/atnaujinimo paviešinimo.
-2468.4. Nuotolinė ar lokali neautorizuota prieiga:
-2468.5. Sistemoje draudžiama bet kokia neautorizuota ar nedokumentuota nuotolinė ar lokali prieiga/paskyros ar bet koks slaptas (nedokumentuotas) funkcionalumas galintis pažeisti sistemos saugumą.
-2468.6. Saugi konfigūracija:
-2468.7. SAULĖ IS Diegėjas privalo pateikti detalias sistemos ir platformos (OS, DBMS, middleware) saugumo konfigūravimo instrukcijas;
-2468.8. SAULĖ IS Diegėjas privalo pateikti sistemos funkcionavimui būtinų platformos komponentų, sisteminių paslaugų, prievadų sąrašą. Visi nebūtini SAULĖ IS funkcionalumui komponentai turi būti deaktyvuoti prieš pradedant sistemos eksploataciją.
-2468.9. Tinklo architektūra:
-2468.10. Duomenų srautai tarp skirtingų lygių turi būti dokumentuoti, nurodant reikalingus komunikacijai prievadus ir protokolus, bei ribojami ugniasienių;
-2468.11. Portalas „Saulė“ turi būti atskiroje nuo vidaus naudotojų platformoje ir atskirame tinklo segmente.
+
+2465.1. Diegėjas SAULĖ IS kūrimo etape turi naudoti naujausias stabilias programinės įrangos versijas ir jos pataisymus (angl. patch / fix). SAULĖ IS įdiegimo į gamybinę aplinką etapo metu turi būti užtikrinta, kad SAULĖ IS naudojamos naujausios stabilios programinės įrangos versijos, jeigu tai nekeičia esminių SAULĖ IS architektūros ir funkcionalumo principų, kurie numatyti Projektavimo etape.
+2466. Nuotolinė ar lokali neautorizuota prieiga:
+2466.1. Sistemoje draudžiama bet kokia neautorizuota ar nedokumentuota nuotolinė ar lokali prieiga/paskyros ar bet koks slaptas (nedokumentuotas) funkcionalumas galintis pažeisti sistemos saugumą.
+2467. Saugi konfigūracija:
+2467.1. SAULĖ IS Diegėjas privalo pateikti detalias sistemos ir platformos (OS, DBMS, middleware) saugumo konfigūravimo instrukcijas;
+2467.2. SAULĖ IS Diegėjas privalo pateikti sistemos funkcionavimui būtinų platformos komponentų, sisteminių paslaugų, prievadų sąrašą. Visi nebūtini SAULĖ IS funkcionalumui komponentai turi būti deaktyvuoti prieš pradedant sistemos eksploataciją.
+2468. Tinklo architektūra:
+2468.1. Duomenų srautai tarp skirtingų lygių turi būti dokumentuoti, nurodant reikalingus komunikacijai prievadus ir protokolus, bei ribojami ugniasienių;
+2468.2. Portalas „Saulė“ turi būti atskiroje nuo vidaus naudotojų platformoje ir atskirame tinklo segmente.
+
 
