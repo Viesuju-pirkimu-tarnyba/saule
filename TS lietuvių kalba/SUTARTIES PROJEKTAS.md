@@ -1,7 +1,8 @@
-      ## CENTRINĖS VIEŠŲJŲ PIRKIMŲ INFORMACINĖS SISTEMOS MODERNIZAVIMO PASLAUGŲ TEIKIMO SUTARTIS
+<h2 align="center"> CENTRINĖS VIEŠŲJŲ PIRKIMŲ INFORMACINĖS SISTEMOS MODERNIZAVIMO PASLAUGŲ TEIKIMO SUTARTIS </h2>
 
                            2021 m.                              d.   Nr.
                                    Vilnius
+
 Viešųjų pirkimų tarnyba, juridinio asmens kodas – 188656261, įsikūrusi adresu Kareivių g. 1, LT-08221 Vilnius, atstovaujama ________________________________________, veikiančios pagal __________________________________________________, (toliau – Paslaugų gavėjas),
 
 ir
